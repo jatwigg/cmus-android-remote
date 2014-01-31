@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/host"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/port"
+            android:layout_alignRight="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_host"
+            android:layout_weight="1" />
+        <EditText
+            android:id="@+id/port"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/button_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/hint_port"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/button_area"
+            android:layout_below="@id/host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:id="@+id/button_area"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/password"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+            <Button
+                android:id="@+id/btnCancel"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Cancel"
+                android:onClick="onClickCancel" />
+
+            <Button
+                android:id="@+id/btnOkay"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Okay"
+                android:onClick="onClickOkay" />
+        </LinearLayout>
+    </RelativeLayout>

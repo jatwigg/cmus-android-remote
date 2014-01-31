@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <integer name="default_port">3000</integer>
+
+    <string name="add_new">Add Other</string>
+    <string name="app_name">Cmus Droid Remote</string>
+    <string name="commandLabel">Command</string>
+    <string name="default_password"></string>
+    <string name="hint_host">Host Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_port">Port</string>
+    <string name="hostAndPortLabel">Host/IP &amp; Port of Cmus</string>
+    <string name="passwordLabel">Password</string>
+    <string name="sendCommandButtonLabel">Send Command</string>
+
+</resources>

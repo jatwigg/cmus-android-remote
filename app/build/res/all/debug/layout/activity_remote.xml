@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsettings"
+            android:src="@drawable/settings"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnmute"
+            android:src="@drawable/mute"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnvoldown"
+            android:src="@drawable/medium"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnvolup"
+            android:src="@drawable/loud"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnshuffle"
+            android:src="@drawable/shuffle"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnrepeat"
+            android:src="@drawable/repeat"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnrepeatall"
+            android:src="@drawable/repeatall"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnback"
+            android:src="@drawable/back"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnstop"
+            android:src="@drawable/stop"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnplay"
+            android:src="@drawable/play"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnforward"
+            android:src="@drawable/forward"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+</LinearLayout><!-- From: file:/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/layout/activity_remote.xml -->
