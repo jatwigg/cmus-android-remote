@@ -90,7 +90,7 @@ public class CmusStatus {
             Float durationF = Float.parseFloat(duration);
             return twoDForm.format(positionF / durationF);
         } catch (Exception e) {
-            Log.w(CmusDroidRemoteActivity.TAG, e);
+            Log.w(getClass().getSimpleName(), e);
             return "Unknown";
         }
     }
@@ -138,7 +138,7 @@ public class CmusStatus {
             DecimalFormat twoDForm = new DecimalFormat("#.##");
             return twoDForm.format((volRightF + volLeftF) / 2.0f) + "%";
         } catch (Exception e) {
-            Log.w(CmusDroidRemoteActivity.TAG, e);
+            Log.w(getClass().getSimpleName(), e);
             return "Unknown";
         }
     }

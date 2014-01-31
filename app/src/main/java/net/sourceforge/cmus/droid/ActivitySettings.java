@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 /**
  * Created by josh on 31/01/14.
  */
@@ -35,8 +37,8 @@ public class ActivitySettings extends Activity implements IReceiveHost {
                 ActivitySettings.this.startActivityForResult(ActivityHostDialog.getStartIntent(ActivitySettings.this, address), REQUEST_CODE);
             }
         });
-        String[] hosts = ActivityHostDialog.getSavedHosts(getSharedPreferences(ActivityHostDialog.PREF_FILE, MODE_PRIVATE));
-        Log.d(getClass().getSimpleName(), "no of hosts received{" + hosts.length + "}.");
+        ArrayList<String> hosts = Storage.getSavedHosts(this);
+        Log.d(getClass().getSimpleName(), "no of hosts received{" + hosts.size() + "}.");
         for (String s : hosts) _hostAdapter.add(s);
         _hostAdapter.notifyDataSetChanged();
         Util.runSearchHosts(this, this);

@@ -78,43 +78,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ActivityRemote.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ActivityRemote.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivityRemote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="36" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+            <state line="102" column="32" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.25641027" vertical-offset="1350" max-vertical-offset="2355">
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivitySettings.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivitySettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="84" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="1140">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#982#1024#0" expanded="true" />
-                <element signature="e#1068#1562#0" expanded="true" />
-                <element signature="e#1338#1380#0" expanded="true" />
-                <element signature="e#1551#1552#0" expanded="true" />
-                <element signature="e#2408#2765#0" expanded="true" />
-                <element signature="e#2754#2755#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityHostDialog.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivityHostDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="37" selection-start="710" selection-end="710" vertical-scroll-proportion="0.19417475" vertical-offset="225" max-vertical-offset="1815">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1745#1794#0" expanded="true" />
-                <element signature="e#1866#1917#0" expanded="true" />
-                <element signature="e#2607#2615#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,32 +92,12 @@
       <file leaf-file-name="Storage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/Storage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_host_dialog.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_host_dialog.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="39" selection-start="1250" selection-end="1250" vertical-scroll-proportion="-13.038462" vertical-offset="111" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Util.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="0" selection-start="4226" selection-end="4226" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1785">
+            <state line="72" column="70" selection-start="2924" selection-end="2924" vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1245">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1449#4206#0" expanded="true" />
-                <element signature="e#4195#4196#0" expanded="true" />
+                <element signature="e#2165#2173#0" expanded="true" />
+                <element signature="e#2522#2579#0" expanded="true" />
+                <element signature="e#2735#2794#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,30 +106,7 @@
       <file leaf-file-name="CmusDroidRemoteActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusDroidRemoteActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="22" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.0" vertical-offset="1279" max-vertical-offset="4395">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="41" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_remote.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="104" column="39" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1740">
+            <state line="118" column="0" selection-start="2" selection-end="3409" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1875">
               <folding />
             </state>
           </provider>
@@ -189,7 +115,7 @@
       <file leaf-file-name="CmusStatus.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="13" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="2100">
+            <state line="123" column="5" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0" vertical-offset="535" max-vertical-offset="2100">
               <folding />
             </state>
           </provider>
@@ -583,24 +509,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusStatus.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/IReceiveHost.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivityRemote.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_host_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/Util.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusDroidRemoteActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivitySettings.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/Storage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivityHostDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivitySettings.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusCommand.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/Host.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/Storage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ICallback.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CommandThread.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusDroidRemoteActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusStatus.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivityRemote.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="1985" />
     <option name="y" value="24" />
     <option name="width" value="1855" />
     <option name="height" value="1056" />
@@ -993,7 +923,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="1985" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1010,7 +940,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952183" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24220374" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1638814" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
@@ -1085,7 +1015,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+        <state line="11" column="41" selection-start="574" selection-end="574" vertical-scroll-proportion="0.23504274" vertical-offset="0" max-vertical-offset="702">
           <folding />
         </state>
       </provider>
@@ -1100,35 +1030,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="13" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="1165" max-vertical-offset="2100">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivityRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_host_dialog.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="39" selection-start="1250" selection-end="1250" vertical-scroll-proportion="-13.038462" vertical-offset="111" max-vertical-offset="1020">
+        <state line="30" column="39" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.50147927" vertical-offset="111" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="4226" selection-end="4226" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1785">
+        <state line="113" column="0" selection-start="4226" selection-end="4226" vertical-scroll-proportion="1.2037038" vertical-offset="850" max-vertical-offset="1785">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1449#4206#0" expanded="true" />
@@ -1137,9 +1051,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusDroidRemoteActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivityHostDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="22" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.0" vertical-offset="1279" max-vertical-offset="4395">
+        <state line="39" column="43" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="1140">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1148,34 +1062,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivitySettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="84" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="1140">
+        <state line="42" column="44" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0" vertical-offset="235" max-vertical-offset="1170">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#982#1024#0" expanded="true" />
-            <element signature="e#1068#1562#0" expanded="true" />
-            <element signature="e#1338#1380#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#2408#2765#0" expanded="true" />
-            <element signature="e#2754#2755#0" expanded="true" />
+            <element signature="e#1011#1053#0" expanded="true" />
+            <element signature="e#1097#1591#0" expanded="true" />
+            <element signature="e#1367#1409#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+            <element signature="e#2375#2732#0" expanded="true" />
+            <element signature="e#2721#2722#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/Host.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.1923077" vertical-offset="0" max-vertical-offset="702">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/Storage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+        <state line="72" column="70" selection-start="2924" selection-end="2924" vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1245">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2165#2173#0" expanded="true" />
+            <element signature="e#2522#2579#0" expanded="true" />
+            <element signature="e#2735#2794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ICallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="52" selection-start="158" selection-end="158" vertical-scroll-proportion="0.12820514" vertical-offset="0" max-vertical-offset="702">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivityHostDialog.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CommandThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="37" selection-start="710" selection-end="710" vertical-scroll-proportion="0.19417475" vertical-offset="225" max-vertical-offset="1815">
+        <state line="38" column="51" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.8119658" vertical-offset="0" max-vertical-offset="1515">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1745#1794#0" expanded="true" />
-            <element signature="e#1866#1917#0" expanded="true" />
-            <element signature="e#2607#2615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="87" selection-end="98" vertical-scroll-proportion="0.10683761" vertical-offset="0" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusDroidRemoteActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="0" selection-start="2" selection-end="3409" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/CmusStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="5" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0" vertical-offset="535" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/net/sourceforge/cmus/droid/ActivityRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="32" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.25641027" vertical-offset="1350" max-vertical-offset="2355">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
