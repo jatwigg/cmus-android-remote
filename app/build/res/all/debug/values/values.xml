@@ -7,14 +7,11 @@
     <integer name="default_port">3000</integer>
 
     <string name="add_new">Add Other</string>
-    <string name="app_name">Cmus Droid Remote</string>
-    <string name="commandLabel">Command</string>
+    <string name="app_name">Cmus Remote</string>
     <string name="default_password"></string>
     <string name="hint_host">Host Address</string>
     <string name="hint_password">Password</string>
     <string name="hint_port">Port</string>
-    <string name="hostAndPortLabel">Host/IP &amp; Port of Cmus</string>
-    <string name="passwordLabel">Password</string>
-    <string name="sendCommandButtonLabel">Send Command</string>
+    <string name="welcome_message">To get started, start cmus using \n\"cmus with --listen 0.0.0.0\"\nThen set a password using \n\":passwd=yourpass\"\nNow add your cmus host details to the settings in this app and hit okay.\n\nThis app is a fork of the seriousben\'s cmus-droid-remote on github. The source for this app can be found at\nhttps://github.com/jatwigg/cmus-droid-remote\n\nThe awesome icons are by www.icons4android.com.\n\nThis is a work in progress, please report any problems.</string>
 
 </resources>

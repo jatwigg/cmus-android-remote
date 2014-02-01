@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
     <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/button_area"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageButton
@@ -39,12 +44,12 @@
             android:onClick="onClick" />
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </LinearLayout>
-    <LinearLayout
+    <LinearLayout android:layout_weight="1"
+        android:id="@+id/button_area2"
+        android:layout_above="@+id/button_area2"
+        android:layout_below="@id/button_area"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageButton
@@ -63,16 +68,20 @@
             android:layout_weight="1"
             android:onClick="onClick" />
 
-        <ImageButton
+        <!--<ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/btnrepeatall"
             android:src="@drawable/repeatall"
             android:layout_weight="1"
-            android:onClick="onClick" />
+            android:onClick="onClick" />-->
 
     </LinearLayout>
-    <LinearLayout
+    <LinearLayout android:layout_weight="1"
+        android:id="@+id/button_area3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_area2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageButton
@@ -108,4 +117,15 @@
             android:onClick="onClick" />
 
     </LinearLayout>
+
+    <TextView android:layout_weight="1"
+        android:id="@+id/status"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="."
+        android:minLines="4"/>
 </LinearLayout><!-- From: file:/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/layout/activity_remote.xml -->

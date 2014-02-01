@@ -14,6 +14,11 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="activity_welcome"
+                path="/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/layout/activity_welcome.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="activity_host_dialog"
                 path="/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/layout/activity_host_dialog.xml"
                 qualifiers=""
@@ -24,30 +29,19 @@
                 qualifiers=""
                 type="layout" />
             <file
-                name="main"
-                path="/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/layout/main.xml"
-                qualifiers=""
-                type="layout" />
-            <file
                 path="/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/values/strings.xml"
                 qualifiers="" >
                 <string name="default_password" ></string>
-                <string name="commandLabel" >Command
-                </string>
                 <string name="add_new" >Add Other
-                </string>
-                <string name="hostAndPortLabel" >Host/IP &amp; Port of Cmus
                 </string>
 
                 <integer name="default_port" >
 3000
                 </integer>
 
-                <string name="passwordLabel" >Password
+                <string name="app_name" >Cmus Remote
                 </string>
-                <string name="app_name" >Cmus Droid Remote
-                </string>
-                <string name="sendCommandButtonLabel" >Send Command
+                <string name="welcome_message" >To get started, start cmus using \n\"cmus with --listen 0.0.0.0\"\nThen set a password using \n\":passwd=yourpass\"\nNow add your cmus host details to the settings in this app and hit okay.\n\nThis app is a fork of the seriousben\'s cmus-droid-remote on github. The source for this app can be found at\nhttps://github.com/jatwigg/cmus-droid-remote\n\nThe awesome icons are by www.icons4android.com.\n\nThis is a work in progress, please report any problems.
                 </string>
                 <string name="hint_port" >Port
                 </string>
@@ -169,6 +163,11 @@
             <file
                 name="shuffle"
                 path="/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/drawable-hdpi/shuffle.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="note2logo"
+                path="/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/drawable-hdpi/note2logo.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
