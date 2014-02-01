@@ -109,7 +109,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="901" selection-end="901" vertical-scroll-proportion="0.26124817" vertical-offset="0" max-vertical-offset="689">
+            <state line="11" column="0" selection-start="900" selection-end="900" vertical-scroll-proportion="0.2394775" vertical-offset="0" max-vertical-offset="689">
               <folding />
             </state>
           </provider>
@@ -159,6 +159,10 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/btsync/dropbox/androidzkeyfile.jks" />
+    <option name="KEY_ALIAS" value="cmusremote" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -867,6 +871,9 @@
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistory" value="ART" />
     <property name="LayoutCode.rearrangeEntries" value="false" />
+    <property name="ExportedModule" value="app" />
+    <property name="ExportedApkPath" value="$PROJECT_DIR$/app/app.apk" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -1332,7 +1339,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="901" selection-end="901" vertical-scroll-proportion="0.26124817" vertical-offset="0" max-vertical-offset="689">
+        <state line="11" column="0" selection-start="900" selection-end="900" vertical-scroll-proportion="0.2394775" vertical-offset="0" max-vertical-offset="689">
           <folding />
         </state>
       </provider>
