@@ -215,6 +215,11 @@
                 path="/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/drawable-mdpi/icon.png"
                 qualifiers="mdpi"
                 type="drawable" />
+            <file
+                name="icon512"
+                path="/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/drawable-hdpi/icon512.png"
+                qualifiers="hdpi"
+                type="drawable" />
         </source>
         <source path="/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/build/res/rs/debug" />
     </dataSet>
