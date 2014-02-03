@@ -1,4 +1,4 @@
-cmus-droid-remote
+cmus-android-remote
 =================
 
 This is an Android application to remotely control your cmus music player.
