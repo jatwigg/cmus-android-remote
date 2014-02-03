@@ -1,4 +1,4 @@
-<!-- From: file:/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.joshtwigg.cmus.droid">
+<!-- From: file:/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.1" package="com.joshtwigg.cmus.droid">
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
