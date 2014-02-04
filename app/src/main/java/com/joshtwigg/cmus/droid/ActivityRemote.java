@@ -23,6 +23,7 @@ public class ActivityRemote extends Activity implements ICallback {
     private SeekBar _seekBar;
     private int pollFreq;
     private static final Handler _pollHandler = new Handler();
+    private int _lastRecordedVolume = -1;
     private Runnable _pollRunnable = new Runnable() {
         @Override
         public void run() {
@@ -98,7 +99,11 @@ public class ActivityRemote extends Activity implements ICallback {
                 ActivitySettings.Show(this);
                 break;
             case R.id.btnmute :
-                sendCommand(CmusCommand.VOLUME_MUTE);
+                if (_bMuted && _lastRecordedVolume > 0) {
+                    sendCommand(CmusCommand.VOLUME(_lastRecordedVolume));
+                } else {
+                    sendCommand(CmusCommand.VOLUME_MUTE);
+                }
                 break;
             case R.id.btnvoldown :
                 sendCommand(CmusCommand.VOLUME_DOWN);
@@ -131,9 +136,6 @@ public class ActivityRemote extends Activity implements ICallback {
             case R.id.btnforward :
                 sendCommand(CmusCommand.NEXT);
                 break;
-//            case R.id.btnstatus :
-//                sendCommand(CmusCommand.STATUS);
-//                break;
         }
     }
 
@@ -176,6 +178,7 @@ public class ActivityRemote extends Activity implements ICallback {
         }
         else {
             _bMuted = false;
+            _lastRecordedVolume = cmusStatus.getUnifiedVolumeInt();
         }
         final int position = cmusStatus.getPositionInt();
         final int duration = cmusStatus.getDurationInt();
@@ -185,7 +188,7 @@ public class ActivityRemote extends Activity implements ICallback {
             public void run() {
                 _status.setText(cmusStatus.toString());
                 _status.postInvalidate();
-                if (duration > 0) {
+                if (duration != -1 && position != -1) {
                     _seekBar.setMax(duration);
                     _seekBar.setProgress(position);
                     _seekBar.postInvalidate();

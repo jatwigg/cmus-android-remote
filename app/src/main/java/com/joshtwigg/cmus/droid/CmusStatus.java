@@ -243,6 +243,26 @@ public class CmusStatus {
         }
     }
 
+
+    public int getUnifiedVolumeInt() {
+        String volRight = settings.get("vol_right");
+        String volLeft = settings.get("vol_left");
+        try {
+            if (volLeft == null && volRight != null) {
+                return Integer.parseInt(volRight);
+            } else if (volLeft != null && volRight == null) {
+                return Integer.parseInt(volLeft);
+            }
+
+            Float volRightF = Float.parseFloat(volRight);
+            Float volLeftF = Float.parseFloat(volLeft);
+            return (int)((volRightF + volLeftF) / 2.0f);
+        } catch (Exception e) {
+            Log.w(getClass().getSimpleName(), e);
+            return -1;
+        }
+    }
+
     @Override
     public String toString() {
         StringBuilder strBuilder = new StringBuilder();

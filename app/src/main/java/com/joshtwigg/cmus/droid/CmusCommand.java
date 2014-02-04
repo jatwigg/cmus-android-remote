@@ -23,7 +23,7 @@ public class CmusCommand {
     }
 
     public static CmusCommand VOLUME(int amount) {
-        return new CmusCommand(String.format("vol ", amount));
+        return new CmusCommand(String.format("vol %s%%", amount));
     }
 
     public static CmusCommand FILE(String file) {
