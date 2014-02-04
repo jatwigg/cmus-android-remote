@@ -3,9 +3,11 @@ package com.joshtwigg.cmus.droid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import java.net.ConnectException;
@@ -19,6 +21,7 @@ public class ActivityRemote extends Activity implements ICallback {
     private boolean _bPlaying = false;
     private TextView _status;
     private ImageButton _playButton;
+    private SeekBar _seekBar;
     private int pollFreq;
     private static final Handler _pollHandler = new Handler();
     private Runnable _pollRunnable = new Runnable() {
@@ -36,6 +39,24 @@ public class ActivityRemote extends Activity implements ICallback {
         pollFreq = getResources().getInteger(R.integer.default_poll_mills);
         _status = (TextView) findViewById(R.id.status);
         _playButton = (ImageButton)findViewById(R.id.btnplay);
+        _seekBar = (SeekBar)findViewById(R.id.seekBar);
+        _seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if (!fromUser) return;
+                //TODO: implement track seeking here.
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
         ActivityWelcome.showIfFirstTime(this);
     }
 
@@ -158,11 +179,16 @@ public class ActivityRemote extends Activity implements ICallback {
         else {
             _bMuted = false;
         }
+        final float percentageComplete = cmusStatus.getPositionPercentFloat();
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 _status.setText(cmusStatus.toString());
                 _status.postInvalidate();
+                if (percentageComplete > 0) {
+                    _seekBar.setProgress((int)(percentageComplete + 0.5f));
+                    _seekBar.postInvalidate();
+                }
             }
         });
     }

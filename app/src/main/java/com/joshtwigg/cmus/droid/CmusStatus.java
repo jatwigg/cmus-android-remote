@@ -159,6 +159,21 @@ public class CmusStatus {
         }
     }
 
+
+    public float getPositionPercentFloat() {
+        if (position == null || duration == null) {
+            return -1;
+        }
+        try {
+            Float positionF = Float.parseFloat(position);
+            Float durationF = Float.parseFloat(duration);
+            return (positionF / durationF) * 100;
+        } catch (Exception e) {
+            Log.w(getClass().getSimpleName(), e);
+            return -1;
+        }
+    }
+
     public void setPosition(String position) {
         this.position = position;
     }
