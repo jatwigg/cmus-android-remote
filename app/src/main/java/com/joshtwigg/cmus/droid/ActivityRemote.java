@@ -3,7 +3,6 @@ package com.joshtwigg.cmus.droid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
@@ -43,8 +42,7 @@ public class ActivityRemote extends Activity implements ICallback {
         _seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                if (!fromUser) return;
-                //TODO: implement track seeking here.
+                if (fromUser) sendCommand(CmusCommand.SEEK(progress));
             }
 
             @Override
@@ -179,14 +177,17 @@ public class ActivityRemote extends Activity implements ICallback {
         else {
             _bMuted = false;
         }
-        final float percentageComplete = cmusStatus.getPositionPercentFloat();
+        final int position = cmusStatus.getPositionInt();
+        final int duration = cmusStatus.getDurationInt();
+
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 _status.setText(cmusStatus.toString());
                 _status.postInvalidate();
-                if (percentageComplete > 0) {
-                    _seekBar.setProgress((int)(percentageComplete + 0.5f));
+                if (duration > 0) {
+                    _seekBar.setMax(duration);
+                    _seekBar.setProgress(position);
                     _seekBar.postInvalidate();
                 }
             }

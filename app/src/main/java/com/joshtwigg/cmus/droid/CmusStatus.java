@@ -174,6 +174,27 @@ public class CmusStatus {
         }
     }
 
+
+    public int getPositionInt() {
+        try {
+            return Integer.parseInt(position);
+        }
+        catch (Exception e){
+            Log.e(getClass().getSimpleName(), "Error parsing position as int.", e);
+        }
+        return -1;
+    }
+
+    public int getDurationInt() {
+        try {
+            return Integer.parseInt(duration);
+        }
+        catch (Exception e){
+            Log.e(getClass().getSimpleName(), "Error parsing duration as int.", e);
+        }
+        return -1;
+    }
+
     public void setPosition(String position) {
         this.position = position;
     }
