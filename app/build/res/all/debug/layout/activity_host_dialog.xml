@@ -60,4 +60,4 @@
                 android:text="Okay"
                 android:onClick="onClickOkay" />
         </LinearLayout>
-    </RelativeLayout><!-- From: file:/home/josh/AndroidStudioProjects/cmus-droid-remote1/app/src/main/res/layout/activity_host_dialog.xml -->
+    </RelativeLayout><!-- From: file:/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/layout/activity_host_dialog.xml -->

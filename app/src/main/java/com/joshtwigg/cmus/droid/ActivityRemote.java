@@ -3,6 +3,7 @@ package com.joshtwigg.cmus.droid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ public class ActivityRemote extends Activity implements ICallback {
     private boolean _bPlaying = false;
     private TextView _status;
     private ImageButton _playButton;
-    private int pollFreq = 1000; //TODO: config this
+    private int pollFreq;
     private static final Handler _pollHandler = new Handler();
     private Runnable _pollRunnable = new Runnable() {
         @Override
@@ -32,9 +33,15 @@ public class ActivityRemote extends Activity implements ICallback {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_remote);
+        pollFreq = getResources().getInteger(R.integer.default_poll_mills);
         _status = (TextView) findViewById(R.id.status);
         _playButton = (ImageButton)findViewById(R.id.btnplay);
         ActivityWelcome.showIfFirstTime(this);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        return false;
     }
 
     @Override
@@ -109,10 +116,6 @@ public class ActivityRemote extends Activity implements ICallback {
 //                sendCommand(CmusCommand.STATUS);
 //                break;
         }
-    }
-
-    private boolean isPlaying() {
-        return false; //TODO: implement
     }
 
     private void sendCommand(final CmusCommand command) {

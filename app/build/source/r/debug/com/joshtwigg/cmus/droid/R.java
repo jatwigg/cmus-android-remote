@@ -71,7 +71,8 @@ public final class R {
         public static final int title=0x7f060014;
     }
     public static final class integer {
-        public static final int default_port=0x7f040000;
+        public static final int default_poll_mills=0x7f040000;
+        public static final int default_port=0x7f040001;
     }
     public static final class layout {
         public static final int activity_host_dialog=0x7f030000;
@@ -86,6 +87,7 @@ public final class R {
         public static final int hint_host=0x7f050003;
         public static final int hint_password=0x7f050004;
         public static final int hint_port=0x7f050005;
-        public static final int welcome_message=0x7f050006;
+        public static final int settings_label=0x7f050006;
+        public static final int welcome_message=0x7f050007;
     }
 }
