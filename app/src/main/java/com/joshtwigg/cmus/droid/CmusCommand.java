@@ -5,7 +5,8 @@ package com.joshtwigg.cmus.droid;
 */
 public class CmusCommand {
     // these are commands that don't require a parameter
-    public static final CmusCommand REPEAT = new CmusCommand("toggle repeat");
+    public static final CmusCommand REPEAT = new CmusCommand("toggle repeat_current");
+    public static final CmusCommand REPEAT_ALL = new CmusCommand("toggle repeat");
     public static final CmusCommand SHUFFLE = new CmusCommand("toggle shuffle");
     public static final CmusCommand STOP = new CmusCommand("player-stop");
     public static final CmusCommand NEXT = new CmusCommand("player-next");

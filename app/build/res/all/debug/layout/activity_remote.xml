@@ -94,13 +94,14 @@
             android:layout_weight="1"
             android:onClick="onClick" />
 
-        <!--<ImageButton
+        <ImageButton
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:id="@+id/btnrepeatall"
             android:src="@drawable/repeatall"
+            android:scaleType="fitCenter"
             android:layout_weight="1"
-            android:onClick="onClick" />-->
+            android:onClick="onClick" />
 
     </LinearLayout>
     <LinearLayout android:layout_weight="1"

@@ -117,9 +117,9 @@ public class ActivityRemote extends Activity implements ICallback {
             case R.id.btnrepeat :
                 sendCommand(CmusCommand.REPEAT);
                 break;
-//            case R.id.btnrepeatall :
-//                sendCommand(CmusCommand.REPEAT_ALL);
-//                break;
+            case R.id.btnrepeatall :
+                sendCommand(CmusCommand.REPEAT_ALL);
+                break;
             case R.id.btnback :
                 sendCommand(CmusCommand.PREV);
                 break;

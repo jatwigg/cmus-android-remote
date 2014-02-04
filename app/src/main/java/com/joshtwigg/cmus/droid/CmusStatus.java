@@ -224,8 +224,8 @@ public class CmusStatus {
     }
 
     public String getUnifiedVolume() {
-        String volRight = settings.get("vol_right");
-        String volLeft = settings.get("vol_left");
+        String volRight = settings.get(Sets.VOL_RIGHT);
+        String volLeft = settings.get(Sets.VOL_LEFT);
         if (volLeft == null && volRight != null) {
             return volRight + "%";
         } else if (volLeft != null && volRight == null) {
@@ -245,8 +245,8 @@ public class CmusStatus {
 
 
     public int getUnifiedVolumeInt() {
-        String volRight = settings.get("vol_right");
-        String volLeft = settings.get("vol_left");
+        String volRight = settings.get(Sets.VOL_RIGHT);
+        String volLeft = settings.get(Sets.VOL_LEFT);
         try {
             if (volLeft == null && volRight != null) {
                 return Integer.parseInt(volRight);
@@ -266,9 +266,9 @@ public class CmusStatus {
     @Override
     public String toString() {
         StringBuilder strBuilder = new StringBuilder();
-        strBuilder.append("Artist: ").append(getTag("artist")).append("\n");
-        strBuilder.append("Title: ").append(getTag("title")).append("\n");
-        strBuilder.append("Position: ").append(getPositionPercent()).append("\n");
+        strBuilder.append("Title: ").append(getTag(Tags.TITLE)).append("\n");
+        strBuilder.append("Album: ").append(getTag(Tags.ALBUM)).append("\n");
+        strBuilder.append("Artist: ").append(getTag(Tags.ARTIST)).append("\n");
         strBuilder.append("Volume: ").append(getUnifiedVolume()).append("\n");
         return strBuilder.toString();
     }

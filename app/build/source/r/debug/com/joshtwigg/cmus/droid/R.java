@@ -46,30 +46,31 @@ public final class R {
         public static final int volup=0x7f020020;
     }
     public static final class id {
-        public static final int body=0x7f060016;
+        public static final int body=0x7f060017;
         public static final int btnCancel=0x7f060004;
         public static final int btnOkay=0x7f060005;
-        public static final int btnback=0x7f060010;
-        public static final int btnforward=0x7f060013;
+        public static final int btnback=0x7f060011;
+        public static final int btnforward=0x7f060014;
         public static final int btnmute=0x7f060009;
-        public static final int btnplay=0x7f060012;
+        public static final int btnplay=0x7f060013;
         public static final int btnrepeat=0x7f06000e;
+        public static final int btnrepeatall=0x7f06000f;
         public static final int btnsettings=0x7f060008;
         public static final int btnshuffle=0x7f06000d;
-        public static final int btnstop=0x7f060011;
+        public static final int btnstop=0x7f060012;
         public static final int btnvoldown=0x7f06000a;
         public static final int btnvolup=0x7f06000b;
         public static final int button_area=0x7f060003;
         public static final int button_area2=0x7f06000c;
-        public static final int button_area3=0x7f06000f;
+        public static final int button_area3=0x7f060010;
         public static final int host=0x7f060000;
-        public static final int hostList=0x7f060014;
-        public static final int okay=0x7f060017;
+        public static final int hostList=0x7f060015;
+        public static final int okay=0x7f060018;
         public static final int password=0x7f060002;
         public static final int port=0x7f060001;
         public static final int seekBar=0x7f060007;
         public static final int status=0x7f060006;
-        public static final int title=0x7f060015;
+        public static final int title=0x7f060016;
     }
     public static final class integer {
         public static final int default_poll_mills=0x7f040000;
