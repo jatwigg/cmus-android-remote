@@ -153,8 +153,8 @@ public class ActivityRemote extends Activity implements ICallback {
 
         final CmusStatus cmusStatus = new CmusStatus(answer);
         // set host and track.
-        setTitle("" + _host.host + " " + cmusStatus.getTag(CmusStatus.TAGS.ARTIST) + " " + cmusStatus.getTag(CmusStatus.TAGS.TITLE));
-        if (cmusStatus.getStatus().equals("stopped") || cmusStatus.getStatus().equals("paused")){
+        setTitle("" + _host.host + " " + cmusStatus.get(CmusStatus.TAGS.ARTIST) + " " + cmusStatus.get(CmusStatus.TAGS.TITLE));
+        if (cmusStatus.get(CmusStatus.STATUS).equals("stopped") || cmusStatus.get(CmusStatus.STATUS).equals("paused")){
             _bPlaying = false;
             runOnUiThread(new Runnable() {
                 @Override
@@ -194,17 +194,17 @@ public class ActivityRemote extends Activity implements ICallback {
                 }
                 if (_showPopup.readShuffle()) {
                     Toast.makeText(ActivityRemote.this, "Shuffle is " +
-                            (cmusStatus.getSettings(CmusStatus.SETTINGS.SHUFFLE).equals("true")?"on":"off"),
+                            (cmusStatus.get(CmusStatus.SETTINGS.SHUFFLE).equals("true")?"on":"off"),
                             Toast.LENGTH_SHORT).show();
                 }
                 if (_showPopup.readRepeat()) {
                     Toast.makeText(ActivityRemote.this, "Repeat is " +
-                            (cmusStatus.getSettings(CmusStatus.SETTINGS.REPEAT_CURRENT).equals("true")?"on":"off"),
+                            (cmusStatus.get(CmusStatus.SETTINGS.REPEAT_CURRENT).equals("true")?"on":"off"),
                             Toast.LENGTH_SHORT).show();
                 }
                 if (_showPopup.readRepeatAll()) {
                     Toast.makeText(ActivityRemote.this, "Repeat all is " +
-                            (cmusStatus.getSettings(CmusStatus.SETTINGS.REPEAT_ALL).equals("true")?"on":"off"),
+                            (cmusStatus.get(CmusStatus.SETTINGS.REPEAT_ALL).equals("true")?"on":"off"),
                             Toast.LENGTH_SHORT).show();
                 }
             }

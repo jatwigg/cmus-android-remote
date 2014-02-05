@@ -86,41 +86,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ActivityRemote.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ActivityRemote.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="62" selection-start="4783" selection-end="4783" vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="3195">
+            <state line="162" column="9" selection-start="5419" selection-end="5419" vertical-scroll-proportion="0.5621806" vertical-offset="1890" max-vertical-offset="3195">
               <folding>
-                <element signature="imports" expanded="false" />
                 <element signature="e#1216#1271#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CmusStatus.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="1" selection-start="150" selection-end="150" vertical-scroll-proportion="0.15332198" vertical-offset="0" max-vertical-offset="3975">
-              <folding>
-                <element signature="e#2377#2393#0" expanded="true" />
-                <element signature="e#2451#2467#0" expanded="true" />
-                <element signature="e#3924#3925#0" expanded="true" />
-                <element signature="e#3953#3954#0" expanded="true" />
-                <element signature="e#3997#3998#0" expanded="true" />
-                <element signature="e#4033#4034#0" expanded="true" />
-                <element signature="e#4064#4065#0" expanded="true" />
-                <element signature="e#4091#4092#0" expanded="true" />
-                <element signature="e#4131#4132#0" expanded="true" />
-                <element signature="e#4163#4164#0" expanded="true" />
-                <element signature="e#4198#4199#0" expanded="true" />
-                <element signature="e#4229#4230#0" expanded="true" />
-                <element signature="e#4277#4278#0" expanded="true" />
-                <element signature="e#4317#4318#0" expanded="true" />
-                <element signature="e#4352#4353#0" expanded="true" />
-                <element signature="e#4383#4384#0" expanded="true" />
-                <element signature="e#5889#5890#0" expanded="true" />
-                <element signature="e#5929#5930#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -563,13 +534,13 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ShowPopupMessage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
+    <option name="x" value="-1856" />
     <option name="y" value="-4" />
     <option name="width" value="1857" />
     <option name="height" value="1085" />
@@ -1072,7 +1043,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <frame x="-1856" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1121,7 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="53" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3315">
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="e#1216#1271#0" expanded="true" />
           </folding>
         </state>
@@ -1152,24 +1122,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="168" column="57" selection-start="5326" selection-end="5326" vertical-scroll-proportion="0.0" vertical-offset="2520" max-vertical-offset="3600">
           <folding>
-            <element signature="e#2377#2393#0" expanded="true" />
-            <element signature="e#2451#2467#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-            <element signature="e#4064#4065#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4163#4164#0" expanded="true" />
-            <element signature="e#4198#4199#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#4383#4384#0" expanded="true" />
-            <element signature="e#5889#5890#0" expanded="true" />
-            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#2488#2504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1178,7 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="61" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="e#1216#1271#0" expanded="true" />
           </folding>
         </state>
@@ -1212,24 +1164,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="210" column="30" selection-start="6599" selection-end="6599" vertical-scroll-proportion="0.0" vertical-offset="3150" max-vertical-offset="3375">
           <folding>
-            <element signature="e#2377#2393#0" expanded="true" />
-            <element signature="e#2451#2467#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-            <element signature="e#4064#4065#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4163#4164#0" expanded="true" />
-            <element signature="e#4198#4199#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#4383#4384#0" expanded="true" />
-            <element signature="e#5889#5890#0" expanded="true" />
-            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#2488#2504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1238,7 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="61" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="e#1216#1271#0" expanded="true" />
           </folding>
         </state>
@@ -1272,24 +1206,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="210" column="30" selection-start="6599" selection-end="6599" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3375">
           <folding>
-            <element signature="e#2377#2393#0" expanded="true" />
-            <element signature="e#2451#2467#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-            <element signature="e#4064#4065#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4163#4164#0" expanded="true" />
-            <element signature="e#4198#4199#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#4383#4384#0" expanded="true" />
-            <element signature="e#5889#5890#0" expanded="true" />
-            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#2488#2504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1298,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="61" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="e#1216#1271#0" expanded="true" />
           </folding>
         </state>
@@ -1332,24 +1248,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="210" column="30" selection-start="6599" selection-end="6599" vertical-scroll-proportion="0.0" vertical-offset="3150" max-vertical-offset="3375">
           <folding>
-            <element signature="e#2377#2393#0" expanded="true" />
-            <element signature="e#2451#2467#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-            <element signature="e#4064#4065#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4163#4164#0" expanded="true" />
-            <element signature="e#4198#4199#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#4383#4384#0" expanded="true" />
-            <element signature="e#5889#5890#0" expanded="true" />
-            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#2488#2504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1358,7 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="5" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="2415">
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="e#1216#1271#0" expanded="true" />
           </folding>
         </state>
@@ -1375,24 +1273,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="5" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="2400">
           <folding>
-            <element signature="e#2377#2393#0" expanded="true" />
-            <element signature="e#2451#2467#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-            <element signature="e#4064#4065#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4163#4164#0" expanded="true" />
-            <element signature="e#4198#4199#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#4383#4384#0" expanded="true" />
-            <element signature="e#5889#5890#0" expanded="true" />
-            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#2488#2504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1401,7 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="0" selection-start="4691" selection-end="4691" vertical-scroll-proportion="0.0" vertical-offset="1263" max-vertical-offset="2415">
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="e#1216#1271#0" expanded="true" />
           </folding>
         </state>
@@ -1418,24 +1298,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="5" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="2400">
           <folding>
-            <element signature="e#2377#2393#0" expanded="true" />
-            <element signature="e#2451#2467#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-            <element signature="e#4064#4065#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4163#4164#0" expanded="true" />
-            <element signature="e#4198#4199#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#4383#4384#0" expanded="true" />
-            <element signature="e#5889#5890#0" expanded="true" />
-            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#2488#2504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1603,38 +1466,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/widget/Toast.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="62" selection-start="4783" selection-end="4783" vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="3195">
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.023850085" vertical-offset="1" max-vertical-offset="765">
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1216#1271#0" expanded="true" />
+            <element signature="e#0#1631#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="150" selection-end="150" vertical-scroll-proportion="0.15332198" vertical-offset="0" max-vertical-offset="3975">
+        <state line="66" column="42" selection-start="2243" selection-end="2303" vertical-scroll-proportion="1.5843271" vertical-offset="0" max-vertical-offset="2550">
           <folding>
-            <element signature="e#2377#2393#0" expanded="true" />
-            <element signature="e#2451#2467#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-            <element signature="e#4064#4065#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4163#4164#0" expanded="true" />
-            <element signature="e#4198#4199#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#4383#4384#0" expanded="true" />
-            <element signature="e#5889#5890#0" expanded="true" />
-            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#2488#2504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="162" column="9" selection-start="5419" selection-end="5419" vertical-scroll-proportion="0.5621806" vertical-offset="1890" max-vertical-offset="3195">
+          <folding>
+            <element signature="e#1216#1271#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -8,6 +8,7 @@ import java.util.Map;
 
 /**
  *
+ status playing
  file /home/josh/Music/Radiohead - The Best Of Radiohead 2008/1-12 Idioteque.mp3
  duration 277
  position 0
@@ -36,12 +37,17 @@ import java.util.Map;
  */
 public class CmusStatus {
 
+    public final static String FILE = "file";
+    public final static String STATUS = "status";
+    public final static String DURATION = "duration";
+    public final static String POSITION = "position";
+
     public final static class TAGS {
-        public static final String ARTIST = "artist";
+        public static final String DATE = "date";
         public static final String ALBUM = "album";
         public static final String TITLE = "title";
-        public static final String DATE = "date";
         public static final String GENRE = "genre";
+        public static final String ARTIST = "artist";
         public static final String DISCNUMBER = "discnumber";
         public static final String TRACKNUMBER = "tracknumber";
         public static final String ALBUMARTIST = "albumartist";
@@ -58,120 +64,41 @@ public class CmusStatus {
         public static final String REPLAYGAIN_PREAMP = "replaygain_preamp";
         public static final String REPEAT_ALL = "repeat";
         public static final String REPEAT_CURRENT = "repeat_current";
-        public static final String SHUFFLE = "shuffle";
-        public static final String SOFTVOL = "softvol";
+        public static final String SHUFFLE= "shuffle";
+        public static final String SOFTVOL = "s oftvol";
         public static final String VOL_LEFT = "vol_left";
         public static final String VOL_RIGHT = "vol_right";
 
     }
-    private String status;
-    private String file;
-    private String duration;
-    private String position;
-    private Map<String, String> tags = new HashMap<String, String>();
-    private Map<String, String> settings = new HashMap<String, String>();
+    private Map<String, String> _map = new HashMap<String, String>();
 
     public CmusStatus(final String answer) {
+        String[] responseLines = answer.split("\n");
+        for (String line : responseLines) {
+            int firstSpace = line.indexOf(' ');
+            String type = line.substring(0, firstSpace);
+            String value = line.substring(firstSpace + 1);
 
-        String[] strs = answer.split("\n");
-
-        for (String str : strs) {
-            if (str.startsWith("set") || str.startsWith("tag")) {
-                addTagOrSetting(str);
+            if (type.equals("set") || type.equals("tag")) {
+                int secondSpace = line.indexOf(' ', firstSpace + 1);
+                String key = line.substring(firstSpace + 1, secondSpace);
+                value = line.substring(secondSpace + 1);
+                _map.put(key, value);
             } else {
-                int firstSpace = str.indexOf(' ');
-                String type = str.substring(0, firstSpace);
-                String value = str.substring(firstSpace + 1);
-                if (type.equals("status")) {
-                    setStatus(value);
-                } else if (type.equals("file")) {
-                    setFile(value);
-                } else if (type.equals("duration")) {
-                    setDuration(value);
-                } else if (type.equals("position")) {
-                    setPosition(value);
-                }
+                // presuming its one of the first three
+                _map.put(type, value);
             }
         }
     }
 
-    private void addTagOrSetting(final String line) {
-        int firstSpace = line.indexOf(' ');
-        int secondSpace = line.indexOf(' ', firstSpace + 1);
-        String type = line.substring(0, firstSpace);
-        String key = line.substring(firstSpace + 1, secondSpace);
-        String value = line.substring(secondSpace + 1);
-        if (type.equals("set")) {
-            setSetting(key, value);
-        } else if (type.equals("tag")) {
-            setTag(key, value);
-        } else {
-            Log.e(getClass().getSimpleName(), "Unknown type in status: " + line);
-        }
+    public String get(String tagOrSettingConst) {
+        if (_map.containsKey(tagOrSettingConst)) return _map.get(tagOrSettingConst);
+        return "Unknown";
     }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getFile() {
-        return file;
-    }
-
-    public void setFile(String file) {
-        this.file = file;
-    }
-
-    public String getDuration() {
-        return duration;
-    }
-
-    public void setDuration(String duration) {
-        this.duration = duration;
-    }
-
-    public String getPosition() {
-        return position;
-    }
-
-    public String getPositionPercent() {
-        if (position == null || duration == null) {
-            return "Unknown";
-        }
-        try {
-            DecimalFormat twoDForm = new DecimalFormat("#.##%");
-            Float positionF = Float.parseFloat(position);
-            Float durationF = Float.parseFloat(duration);
-            return twoDForm.format(positionF / durationF);
-        } catch (Exception e) {
-            Log.w(getClass().getSimpleName(), e);
-            return "Unknown";
-        }
-    }
-
-
-    public float getPositionPercentFloat() {
-        if (position == null || duration == null) {
-            return -1;
-        }
-        try {
-            Float positionF = Float.parseFloat(position);
-            Float durationF = Float.parseFloat(duration);
-            return (positionF / durationF) * 100;
-        } catch (Exception e) {
-            Log.w(getClass().getSimpleName(), e);
-            return -1;
-        }
-    }
-
 
     public int getPositionInt() {
         try {
-            return Integer.parseInt(position);
+            return Integer.parseInt(_map.get(POSITION));
         }
         catch (Exception e){
             Log.e(getClass().getSimpleName(), "Error parsing position as int.", e);
@@ -181,7 +108,7 @@ public class CmusStatus {
 
     public int getDurationInt() {
         try {
-            return Integer.parseInt(duration);
+            return Integer.parseInt(_map.get(DURATION));
         }
         catch (Exception e){
             Log.e(getClass().getSimpleName(), "Error parsing duration as int.", e);
@@ -189,37 +116,15 @@ public class CmusStatus {
         return -1;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
-    public String getTag(String key) {
-        String value = tags.get(key);
-        return value != null ? value : "Unknown";
-    }
-
-    public void setTag(String key, String value) {
-        this.tags.put(key, value);
-    }
-
-    public String getSettings(String key) {
-        String value = settings.get(key);
-        return value != null ? value : "Unknown";
-    }
-
-    public void setSetting(String key, String value) {
-        this.settings.put(key, value);
-    }
-
     public String getUnifiedVolume() {
-        String volRight = settings.get(SETTINGS.VOL_RIGHT);
-        String volLeft = settings.get(SETTINGS.VOL_LEFT);
-        if (volLeft == null && volRight != null) {
-            return volRight + "%";
-        } else if (volLeft != null && volRight == null) {
-            return volLeft + "%";
-        }
         try {
+            String volRight = _map.get(SETTINGS.VOL_RIGHT);
+            String volLeft = _map.get(SETTINGS.VOL_LEFT);
+            if (volLeft == null && volRight != null) {
+                return volRight + "%";
+            } else if (volLeft != null && volRight == null) {
+                return volLeft + "%";
+            }
             Float volRightF = Float.parseFloat(volRight);
             Float volLeftF = Float.parseFloat(volLeft);
 
@@ -233,9 +138,9 @@ public class CmusStatus {
 
 
     public int getUnifiedVolumeInt() {
-        String volRight = settings.get(SETTINGS.VOL_RIGHT);
-        String volLeft = settings.get(SETTINGS.VOL_LEFT);
         try {
+            String volRight = _map.get(SETTINGS.VOL_RIGHT);
+            String volLeft = _map.get(SETTINGS.VOL_LEFT);
             if (volLeft == null && volRight != null) {
                 return Integer.parseInt(volRight);
             } else if (volLeft != null && volRight == null) {
@@ -254,9 +159,9 @@ public class CmusStatus {
     @Override
     public String toString() {
         StringBuilder strBuilder = new StringBuilder();
-        strBuilder.append("Title: ").append(getTag(TAGS.TITLE)).append("\n");
-        strBuilder.append("Album: ").append(getTag(TAGS.ALBUM)).append("\n");
-        strBuilder.append("Artist: ").append(getTag(TAGS.ARTIST)).append("\n");
+        strBuilder.append("Title: ").append(_map.get(TAGS.TITLE)).append("\n");
+        strBuilder.append("Album: ").append(_map.get(TAGS.ALBUM)).append("\n");
+        strBuilder.append("Artist: ").append(_map.get(TAGS.ARTIST)).append("\n");
         strBuilder.append("Volume: ").append(getUnifiedVolume()).append("\n");
         return strBuilder.toString();
     }
