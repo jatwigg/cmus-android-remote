@@ -25,10 +25,11 @@ Features
 * Save multiple cmus host configurations.
 * Implemented functions include: mute, unmute, volume up/down, shuffle, repeat track, repeat all, seek track, previous, forward, stop, play and pause.
 * Limited track information is displayed.
+* Theme changes depending on API version.
 
 There will be more features to come including
 
-* Better UI layouts including landscape mode.
+* Landscape mode.
 * All available functions.
 * Pull album art from the internet.
 * Probably more.
