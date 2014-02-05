@@ -45,11 +45,6 @@ public class ActivitySettings extends Activity implements IReceiveHost {
     }
 
     @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        return false;
-    }
-
-    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         Log.d(getClass().getSimpleName(), String.format("Activity returned result {%s} {%s}", requestCode, resultCode));
         if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) finish();

@@ -9,22 +9,23 @@
 
     <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="false">
         <activity android:name=".ActivityRemote"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".ActivitySettings"
-            android:label="@string/settings_label">
+            android:label="@string/settings_label"
+            android:theme="@style/Theme.Activity">
         </activity>
         <activity android:name=".ActivityHostDialog"
-            android:label=""
-            android:theme="@android:style/Theme.Dialog">
+            android:label="@string/host_dialog_label"
+            android:theme="@style/Theme.Dialog">
         </activity>
         <activity android:name=".ActivityWelcome"
-            android:label=""
-            android:theme="@android:style/Theme.Dialog">
+            android:theme="@style/Theme.Dialog">
         </activity>
     </application>
 </manifest>

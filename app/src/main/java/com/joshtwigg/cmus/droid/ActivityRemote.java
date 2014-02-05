@@ -60,11 +60,6 @@ public class ActivityRemote extends Activity implements ICallback {
     }
 
     @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        return false;
-    }
-
-    @Override
     protected void onPause() {
         super.onPause();
         _pollHandler.removeCallbacksAndMessages(null);

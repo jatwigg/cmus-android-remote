@@ -29,6 +29,18 @@
                 qualifiers=""
                 type="layout" />
             <file
+                path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="Theme.Activity"
+                    parent="android:Theme.Holo" />
+
+                <style
+                    name="Theme.Dialog"
+                    parent="android:Theme.Holo.Dialog" />
+            </file>
+            <file
                 path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/values/strings.xml"
                 qualifiers="" >
                 <string name="default_password" ></string>
@@ -42,6 +54,8 @@
                 </integer>
 
                 <string name="app_name" >Cmus Remote
+                </string>
+                <string name="host_dialog_label" >Host Details
                 </string>
                 <string name="welcome_message" >Thank you for downloading this app.\nTo get started, start your cmus with the correct parameters\n
 <b>
@@ -70,6 +84,18 @@ www.icons4android.com
                 <integer name="default_poll_mills" >
 1000
                 </integer>
+            </file>
+            <file
+                path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="Theme.Dialog"
+                    parent="android:Theme.Dialog" />
+
+                <style
+                    name="Theme.Activity"
+                    parent="android:Theme.Black" />
             </file>
             <file
                 name="loud"
@@ -236,6 +262,18 @@ www.icons4android.com
                 path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/drawable-hdpi/medium.png"
                 qualifiers="hdpi"
                 type="drawable" />
+            <file
+                path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="Theme.Activity"
+                    parent="android:Theme.DeviceDefault" />
+
+                <style
+                    name="Theme.Dialog"
+                    parent="android:Theme.DeviceDefault.Dialog" />
+            </file>
             <file
                 name="icon"
                 path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/drawable-mdpi/icon.png"

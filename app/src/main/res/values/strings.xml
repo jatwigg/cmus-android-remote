@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Cmus Remote</string>
     <string name="settings_label">Remote Settings</string>
+    <string name="host_dialog_label">Host Details</string>
     <string name="add_new">Add Other</string>
     <integer name="default_port">3000</integer>
     <string name="default_password"></string>

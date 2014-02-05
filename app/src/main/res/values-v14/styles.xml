@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Themes for API 14+ -->
+<resources>
+    <style name="Theme.Activity" parent="android:Theme.DeviceDefault" />
+    <style name="Theme.Dialog" parent="android:Theme.DeviceDefault.Dialog" />
+</resources>
