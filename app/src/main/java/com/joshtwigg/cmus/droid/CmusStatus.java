@@ -8,39 +8,35 @@ import java.util.Map;
 
 /**
  *
- * <pre>
- *  status playing
- *  file /home/me/Music/Queen . Greatest Hits I, II, III The Platinum Collection/Queen/Queen - Greatest Hits III (1999)(The Platinum Collection)/11 - Let me Live.mp3
- *  duration 285
- *  position 186
- * tag artist Queen
- * tag album Greatest Hits, Vol. 3
- * tag title Let Me Live
- * tag date 2000
- * tag genre Rock
- * tag tracknumber 11
- * tag albumartist Queen
- * set aaa_mode all
- * set continue true
- * set play_library true
- * set play_sorted false
- * set replaygain disabled
- * set replaygain_limit true
- * set replaygain_preamp 6.000000
- * set repeat true
- * set repeat_current false
- * set shuffle true
- * set softvol false
- * set vol_left 69
- * set vol_right 69
- * </pre>
- *
- * @author bboudreau
- *
+ file /home/josh/Music/Radiohead - The Best Of Radiohead 2008/1-12 Idioteque.mp3
+ duration 277
+ position 0
+ tag artist Radiohead
+ tag album The Best Of Radiohead 2008
+ tag title Idioteque
+ tag date 2008
+ tag genre Rock
+ tag discnumber 1
+ tag tracknumber 12
+ tag albumartist Radiohead
+ tag replaygain_track_gain -7.2 dB
+ set aaa_mode all
+ set continue true
+ set play_library true
+ set play_sorted false
+ set replaygain disabled
+ set replaygain_limit true
+ set replaygain_preamp 6.000000
+ set repeat false
+ set repeat_current false
+ set shuffle false
+ set softvol false
+ set vol_left 100
+ set vol_right 100
  */
 public class CmusStatus {
 
-    public final static class Tags {
+    public final static class TAGS {
         public static final String ARTIST = "artist";
         public static final String ALBUM = "album";
         public static final String TITLE = "title";
@@ -52,7 +48,7 @@ public class CmusStatus {
         public static final String REPLAY_GAIN = "replaygain_track_gain";
     }
 
-    public final static class Sets {
+    public final static class SETTINGS {
         public static final String AAA_MODE = "aaa_mode";
         public static final String CONTINUE = "continue";
         public static final String PLAY_LIBRARY = "play_library";
@@ -60,7 +56,7 @@ public class CmusStatus {
         public static final String REPLAYGAIN = "replaygain";
         public static final String REPLAYGAIN_LIMIT = "replaygain_limit";
         public static final String REPLAYGAIN_PREAMP = "replaygain_preamp";
-        public static final String REPEAT = "repeat";
+        public static final String REPEAT_ALL = "repeat";
         public static final String REPEAT_CURRENT = "repeat_current";
         public static final String SHUFFLE = "shuffle";
         public static final String SOFTVOL = "softvol";
@@ -72,12 +68,10 @@ public class CmusStatus {
     private String file;
     private String duration;
     private String position;
-    private Map<String, String> tags;
-    private Map<String, String> settings;
+    private Map<String, String> tags = new HashMap<String, String>();
+    private Map<String, String> settings = new HashMap<String, String>();
 
     public CmusStatus(final String answer) {
-        this.tags = new HashMap<String, String>();
-        this.settings = new HashMap<String, String>();
 
         String[] strs = answer.split("\n");
 
@@ -205,9 +199,6 @@ public class CmusStatus {
     }
 
     public void setTag(String key, String value) {
-        if (this.tags == null) {
-            this.tags = new HashMap<String, String>();
-        }
         this.tags.put(key, value);
     }
 
@@ -217,15 +208,12 @@ public class CmusStatus {
     }
 
     public void setSetting(String key, String value) {
-        if (this.settings == null) {
-            this.settings = new HashMap<String, String>();
-        }
         this.settings.put(key, value);
     }
 
     public String getUnifiedVolume() {
-        String volRight = settings.get(Sets.VOL_RIGHT);
-        String volLeft = settings.get(Sets.VOL_LEFT);
+        String volRight = settings.get(SETTINGS.VOL_RIGHT);
+        String volLeft = settings.get(SETTINGS.VOL_LEFT);
         if (volLeft == null && volRight != null) {
             return volRight + "%";
         } else if (volLeft != null && volRight == null) {
@@ -245,8 +233,8 @@ public class CmusStatus {
 
 
     public int getUnifiedVolumeInt() {
-        String volRight = settings.get(Sets.VOL_RIGHT);
-        String volLeft = settings.get(Sets.VOL_LEFT);
+        String volRight = settings.get(SETTINGS.VOL_RIGHT);
+        String volLeft = settings.get(SETTINGS.VOL_LEFT);
         try {
             if (volLeft == null && volRight != null) {
                 return Integer.parseInt(volRight);
@@ -266,9 +254,9 @@ public class CmusStatus {
     @Override
     public String toString() {
         StringBuilder strBuilder = new StringBuilder();
-        strBuilder.append("Title: ").append(getTag(Tags.TITLE)).append("\n");
-        strBuilder.append("Album: ").append(getTag(Tags.ALBUM)).append("\n");
-        strBuilder.append("Artist: ").append(getTag(Tags.ARTIST)).append("\n");
+        strBuilder.append("Title: ").append(getTag(TAGS.TITLE)).append("\n");
+        strBuilder.append("Album: ").append(getTag(TAGS.ALBUM)).append("\n");
+        strBuilder.append("Artist: ").append(getTag(TAGS.ARTIST)).append("\n");
         strBuilder.append("Volume: ").append(getUnifiedVolume()).append("\n");
         return strBuilder.toString();
     }
