@@ -23,7 +23,7 @@ Features
 ========
 
 * Save multiple cmus host configurations.
-* Implemented functions include: mute, volume up/down, shuffle, repeat track, previous, forward, stop, play and pause.
+* Implemented functions include: mute, unmute, volume up/down, shuffle, repeat track, repeat all, seek track, previous, forward, stop, play and pause.
 * Limited track information is displayed.
 
 There will be more features to come including
