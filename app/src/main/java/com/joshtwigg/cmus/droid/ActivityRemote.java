@@ -3,6 +3,7 @@ package com.joshtwigg.cmus.droid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
@@ -57,7 +58,6 @@ public class ActivityRemote extends Activity implements ICallback {
 
             }
         });
-        ActivityWelcome.showIfFirstTime(this);
     }
 
     @Override
