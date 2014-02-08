@@ -1,6 +1,10 @@
 package com.joshtwigg.cmus.droid;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -35,10 +39,18 @@ public class ActivityRemote extends Activity implements ICallback {
             _pollHandler.postDelayed(this, _settings.POLL_DURATION_MILLS);
         }
     };
+    private BroadcastReceiver _intentReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            _settings = Storage.getSettings(ActivityRemote.this);
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        IntentFilter intentFilter = new IntentFilter(getResources().getString(R.string.intent_settings_changed));
+        registerReceiver(_intentReceiver, intentFilter);
         _settings = Storage.getSettings(this);
         setContentView(R.layout.activity_remote);
         _trackDetails = (TextView) findViewById(R.id.track_details);
@@ -80,6 +92,12 @@ public class ActivityRemote extends Activity implements ICallback {
         } else {
             setTitle("CMUS Remote Connecting");
             connect();
+        }
+        if (_settings.FETCH_ARTWORK) {
+            _albumArt.setVisibility(View.VISIBLE);
+            _currentInfo.album = ""; //regetch if needed
+        } else {
+            _albumArt.setVisibility(View.INVISIBLE);
         }
     }
 
@@ -262,5 +280,11 @@ public class ActivityRemote extends Activity implements ICallback {
                 ActivityRemote.super.setTitle(title);
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        unregisterReceiver(_intentReceiver);
+        super.onDestroy();
     }
 }

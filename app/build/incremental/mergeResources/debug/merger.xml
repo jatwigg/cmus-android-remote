@@ -64,6 +64,8 @@ on github
 www.icons4android.com
                     </a>.\n\nThis is a work in progress, please allow your device to report any problems.
                 </string>
+                <string name="intent_settings_extra" >SETTINGS_EXTRA
+                </string>
 
                 <bool name="default_fetch_artwork" >
 true
@@ -88,6 +90,8 @@ true
                 <string name="host_manager_label" >Hosts
                 </string>
                 <string name="hint_password" >Password
+                </string>
+                <string name="intent_settings_changed" >com.joshtwigg.cmus.settings.have.changed
                 </string>
                 <string name="image_file_start" >img-
                 </string>

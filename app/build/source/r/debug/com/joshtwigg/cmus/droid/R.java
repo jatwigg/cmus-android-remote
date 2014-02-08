@@ -50,32 +50,36 @@ public final class R {
         public static final int volup=0x7f020021;
     }
     public static final class id {
-        public static final int album_art=0x7f080007;
-        public static final int body=0x7f080018;
+        public static final int album_art=0x7f08000b;
+        public static final int body=0x7f08001c;
         public static final int btnCancel=0x7f080004;
         public static final int btnOkay=0x7f080005;
-        public static final int btnback=0x7f080013;
-        public static final int btnforward=0x7f080016;
-        public static final int btnmute=0x7f08000b;
-        public static final int btnplay=0x7f080015;
-        public static final int btnrepeat=0x7f080010;
-        public static final int btnrepeatall=0x7f080011;
-        public static final int btnsettings=0x7f08000a;
-        public static final int btnshuffle=0x7f08000f;
-        public static final int btnstop=0x7f080014;
-        public static final int btnvoldown=0x7f08000c;
-        public static final int btnvolup=0x7f08000d;
+        public static final int btnback=0x7f080017;
+        public static final int btnforward=0x7f08001a;
+        public static final int btnmute=0x7f08000f;
+        public static final int btnplay=0x7f080019;
+        public static final int btnrepeat=0x7f080014;
+        public static final int btnrepeatall=0x7f080015;
+        public static final int btnsettings=0x7f08000e;
+        public static final int btnshuffle=0x7f080013;
+        public static final int btnstop=0x7f080018;
+        public static final int btnvoldown=0x7f080010;
+        public static final int btnvolup=0x7f080011;
         public static final int button_area=0x7f080003;
-        public static final int button_area2=0x7f08000e;
-        public static final int button_area3=0x7f080012;
+        public static final int button_area2=0x7f080012;
+        public static final int button_area3=0x7f080016;
+        public static final int clear_cache=0x7f080008;
+        public static final int fetch_art=0x7f080007;
         public static final int host=0x7f080000;
-        public static final int hostList=0x7f080006;
-        public static final int okay=0x7f080019;
+        public static final int hostList=0x7f08000a;
+        public static final int okay=0x7f08001d;
         public static final int password=0x7f080002;
         public static final int port=0x7f080001;
-        public static final int seekBar=0x7f080009;
-        public static final int title=0x7f080017;
-        public static final int track_details=0x7f080008;
+        public static final int seekBar=0x7f08000d;
+        public static final int textView=0x7f080009;
+        public static final int textView2=0x7f080006;
+        public static final int title=0x7f08001b;
+        public static final int track_details=0x7f08000c;
     }
     public static final class integer {
         public static final int default_poll_mills=0x7f050000;
@@ -97,8 +101,10 @@ public final class R {
         public static final int host_dialog_label=0x7f060006;
         public static final int host_manager_label=0x7f060007;
         public static final int image_file_start=0x7f060008;
-        public static final int track_details_text=0x7f060009;
-        public static final int welcome_message=0x7f06000a;
+        public static final int intent_settings_changed=0x7f060009;
+        public static final int intent_settings_extra=0x7f06000a;
+        public static final int track_details_text=0x7f06000b;
+        public static final int welcome_message=0x7f06000c;
     }
     public static final class style {
         public static final int Theme_Activity=0x7f070000;
