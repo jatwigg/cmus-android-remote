@@ -15,7 +15,7 @@ import java.util.ArrayList;
 /**
  * Created by josh on 31/01/14.
  */
-public class ActivitySettings extends Activity implements IReceiveHost {
+public class ActivityHostManager extends Activity implements IReceiveHost {
     private static final int REQUEST_CODE = 100;
     private ListView _hostView;
     private ArrayAdapter<String> _hostAdapter;
@@ -23,7 +23,7 @@ public class ActivitySettings extends Activity implements IReceiveHost {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_host_manager);
         _hostAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
         _hostView = (ListView) findViewById(R.id.hostList);
         _hostView.setAdapter(_hostAdapter);
@@ -33,7 +33,7 @@ public class ActivitySettings extends Activity implements IReceiveHost {
             public void onItemClick(AdapterView<?> adapter, View item, int position, long id) {
                 String address = adapter.getItemAtPosition(position).toString();
                 if (address == getResources().getString(R.string.add_new)) address = "";
-                ActivitySettings.this.startActivityForResult(ActivityHostDialog.getStartIntent(ActivitySettings.this, address), REQUEST_CODE);
+                ActivityHostManager.this.startActivityForResult(ActivityHostDialog.getStartIntent(ActivityHostManager.this, address), REQUEST_CODE);
             }
         });
         ArrayList<String> hosts = Storage.getSavedHosts(this);
@@ -65,7 +65,7 @@ public class ActivitySettings extends Activity implements IReceiveHost {
     }
 
     public static void Show(Context context) {
-        Intent intent = new Intent(context, ActivitySettings.class);
+        Intent intent = new Intent(context, ActivityHostManager.class);
         context.startActivity(intent);
     }
 }

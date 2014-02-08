@@ -2,7 +2,6 @@ package com.joshtwigg.cmus.droid;
 
 import android.util.Log;
 
-import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -96,44 +95,18 @@ public class CmusStatus {
         return "Unknown";
     }
 
-    public int getPositionInt() {
+    public int getInt(final String tagOrSettingConst) {
         try {
-            return Integer.parseInt(_map.get(POSITION));
+            return Integer.parseInt(_map.get(tagOrSettingConst));
         }
         catch (Exception e){
-            Log.e(getClass().getSimpleName(), "Error parsing position as int.", e);
+            Log.e(getClass().getSimpleName(), String.format("Error parsing %s as int.", tagOrSettingConst), e);
         }
-        return -1;
-    }
-
-    public int getDurationInt() {
-        try {
-            return Integer.parseInt(_map.get(DURATION));
-        }
-        catch (Exception e){
-            Log.e(getClass().getSimpleName(), "Error parsing duration as int.", e);
-        }
-        return -1;
+        return -1; // don't return 0 in case the caller was planning to divide.
     }
 
     public String getUnifiedVolume() {
-        try {
-            String volRight = _map.get(SETTINGS.VOL_RIGHT);
-            String volLeft = _map.get(SETTINGS.VOL_LEFT);
-            if (volLeft == null && volRight != null) {
-                return volRight + "%";
-            } else if (volLeft != null && volRight == null) {
-                return volLeft + "%";
-            }
-            Float volRightF = Float.parseFloat(volRight);
-            Float volLeftF = Float.parseFloat(volLeft);
-
-            DecimalFormat twoDForm = new DecimalFormat("#.##");
-            return twoDForm.format((volRightF + volLeftF) / 2.0f) + "%";
-        } catch (Exception e) {
-            Log.w(getClass().getSimpleName(), e);
-            return "Unknown";
-        }
+        return getUnifiedVolumeInt() + "%";
     }
 
 
@@ -154,6 +127,10 @@ public class CmusStatus {
             Log.w(getClass().getSimpleName(), e);
             return -1;
         }
+    }
+
+    public boolean volumeIsZero() {
+        return getUnifiedVolumeInt() == 0;
     }
 
     @Override

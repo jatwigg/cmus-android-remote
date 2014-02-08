@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivitySettings"
-            android:label="@string/settings_label"
+        <activity android:name=".ActivityHostManager"
+            android:label="@string/host_manager_label"
             android:theme="@style/Theme.Activity">
         </activity>
         <activity android:name=".ActivityHostDialog"

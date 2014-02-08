@@ -100,7 +100,7 @@ public class ActivityRemote extends Activity implements ICallback {
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.btnsettings :
-                ActivitySettings.Show(this);
+                ActivityHostManager.Show(this);
                 break;
             case R.id.btnmute :
                 if (_bMuted && _lastRecordedVolume > 0) {
@@ -154,14 +154,14 @@ public class ActivityRemote extends Activity implements ICallback {
     }
 
     @Override
-    public void onAnswer(CmusCommand command, String answer) {
+    public void onAnswer(final CmusCommand command, final String answer) {
         if (!command.equals(CmusCommand.STATUS)) {
             return;
         }
 
         final CmusStatus cmusStatus = new CmusStatus(answer);
         // set host and track.
-        setTitle("" + _host.host + " " + cmusStatus.get(CmusStatus.TAGS.ARTIST) + " " + cmusStatus.get(CmusStatus.TAGS.TITLE));
+        setTitle(String.format("%s:%d",_host.host, _host.port));
         if (cmusStatus.get(CmusStatus.STATUS).equals("stopped") || cmusStatus.get(CmusStatus.STATUS).equals("paused")){
             _bPlaying = false;
             runOnUiThread(new Runnable() {
@@ -180,7 +180,7 @@ public class ActivityRemote extends Activity implements ICallback {
                 }
             });
         }
-        if (cmusStatus.getUnifiedVolume().equals("0%")){
+        if (cmusStatus.volumeIsZero()){
             _bMuted = true;
         }
         else {
@@ -216,8 +216,8 @@ public class ActivityRemote extends Activity implements ICallback {
             }
         }
         // check duration and position for seekbar
-        final int position = cmusStatus.getPositionInt();
-        final int duration = cmusStatus.getDurationInt();
+        final int position = cmusStatus.getInt(CmusStatus.POSITION);
+        final int duration = cmusStatus.getInt(CmusStatus.DURATION);
 
         runOnUiThread(new Runnable() {
             @Override

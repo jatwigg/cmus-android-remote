@@ -9,4 +9,4 @@
         android:layout_height="wrap_content"
         android:id="@+id/hostList"
         android:choiceMode="singleChoice" />
-</LinearLayout><!-- From: file:/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/layout/activity_settings.xml -->
+</LinearLayout><!-- From: file:/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/layout/activity_host_manager.xml -->

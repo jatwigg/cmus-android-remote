@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Cmus Remote</string>
-    <string name="settings_label">Remote Settings</string>
+    <string name="host_manager_label">Hosts</string>
     <string name="host_dialog_label">Host Details</string>
     <string name="image_file_start">img-</string>
     <string name="add_new">Add Other</string>

@@ -10,7 +10,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/settings_label" android:name="com.joshtwigg.cmus.droid.ActivitySettings" android:theme="@style/Theme.Activity">
+        <activity android:label="@string/host_manager_label" android:name="com.joshtwigg.cmus.droid.ActivityHostManager" android:theme="@style/Theme.Activity">
         </activity>
         <activity android:label="@string/host_dialog_label" android:name="com.joshtwigg.cmus.droid.ActivityHostDialog" android:theme="@style/Theme.Dialog">
         </activity>
