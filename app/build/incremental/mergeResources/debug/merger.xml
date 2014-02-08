@@ -65,6 +65,10 @@ www.icons4android.com
                     </a>.\n\nThis is a work in progress, please allow your device to report any problems.
                 </string>
 
+                <bool name="default_fetch_artwork" >
+true
+                </bool>
+
                 <integer name="default_poll_mills" >
 1000
                 </integer>

@@ -20,31 +20,27 @@ import java.net.ConnectException;
  */
 public class ActivityRemote extends Activity implements ICallback {
     private Host _host = null;
-    private String _album = "", _artist = "";
-    private boolean _bMuted = false;
-    private boolean _bPlaying = false;
-    private boolean _bShowArt = true; //TODO: config this
+    private TrackInfo _currentInfo = new TrackInfo();
     private ShowPopupMessage _showPopup = new ShowPopupMessage();
     private TextView _trackDetails;
     private ImageButton _playButton;
     private SeekBar _seekBar;
     private ImageView _albumArt;
-    private int pollFreq;
     private static final Handler _pollHandler = new Handler();
-    private int _lastRecordedVolume = -1;
+    private Settings _settings;
     private Runnable _pollRunnable = new Runnable() {
         @Override
         public void run() {
             sendCommand(CmusCommand.STATUS);
-            _pollHandler.postDelayed(this, pollFreq);
+            _pollHandler.postDelayed(this, _settings.POLL_DURATION_MILLS);
         }
     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        _settings = Storage.getSettings(this);
         setContentView(R.layout.activity_remote);
-        pollFreq = getResources().getInteger(R.integer.default_poll_mills);
         _trackDetails = (TextView) findViewById(R.id.track_details);
         _trackDetails.setBackgroundColor(Color.argb(150, 0, 0, 0));
         _playButton = (ImageButton)findViewById(R.id.btnplay);
@@ -94,7 +90,7 @@ public class ActivityRemote extends Activity implements ICallback {
 
     private void connect() {
         sendCommand(CmusCommand.STATUS);
-        _pollHandler.postDelayed(_pollRunnable, pollFreq);
+        _pollHandler.postDelayed(_pollRunnable, _settings.POLL_DURATION_MILLS);
     }
 
     public void onClick(View view) {
@@ -103,8 +99,8 @@ public class ActivityRemote extends Activity implements ICallback {
                 ActivityHostManager.Show(this);
                 break;
             case R.id.btnmute :
-                if (_bMuted && _lastRecordedVolume > 0) {
-                    sendCommand(CmusCommand.VOLUME(_lastRecordedVolume));
+                if (_currentInfo.isMuted && _currentInfo.lastRecordedVolume > 0) {
+                    sendCommand(CmusCommand.VOLUME(_currentInfo.lastRecordedVolume));
                 } else {
                     sendCommand(CmusCommand.VOLUME_MUTE);
                 }
@@ -134,7 +130,7 @@ public class ActivityRemote extends Activity implements ICallback {
                 sendCommand(CmusCommand.STOP);
                 break;
             case R.id.btnplay :
-                if (_bPlaying) {
+                if (_currentInfo.isPlaying) {
                     sendCommand(CmusCommand.PAUSE);
                 } else {
                     sendCommand(CmusCommand.PLAY);
@@ -163,7 +159,7 @@ public class ActivityRemote extends Activity implements ICallback {
         // set host and track.
         setTitle(String.format("%s:%d",_host.host, _host.port));
         if (cmusStatus.get(CmusStatus.STATUS).equals("stopped") || cmusStatus.get(CmusStatus.STATUS).equals("paused")){
-            _bPlaying = false;
+            _currentInfo.isPlaying = false;
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -172,7 +168,7 @@ public class ActivityRemote extends Activity implements ICallback {
             });
         }
         else {
-            _bPlaying = true;
+            _currentInfo.isPlaying = true;
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -181,24 +177,24 @@ public class ActivityRemote extends Activity implements ICallback {
             });
         }
         if (cmusStatus.volumeIsZero()){
-            _bMuted = true;
+            _currentInfo.isMuted = true;
         }
         else {
-            _bMuted = false;
-            _lastRecordedVolume = cmusStatus.getUnifiedVolumeInt();
+            _currentInfo.isMuted = false;
+            _currentInfo.lastRecordedVolume = cmusStatus.getUnifiedVolumeInt();
         }
         // check image art is still correct
-        if (_bShowArt) {
-            if (!_album.equals(cmusStatus.get(CmusStatus.TAGS.ALBUM)) ||
-                    !_artist.equals(cmusStatus.get(CmusStatus.TAGS.ARTIST))) {
-                _album = cmusStatus.get(CmusStatus.TAGS.ALBUM);
-                _artist = cmusStatus.get(CmusStatus.TAGS.ARTIST);
+        if (_settings.FETCH_ARTWORK) {
+            if (!_currentInfo.album.equals(cmusStatus.get(CmusStatus.TAGS.ALBUM)) ||
+                    !_currentInfo.artist.equals(cmusStatus.get(CmusStatus.TAGS.ARTIST))) {
+                _currentInfo.album = cmusStatus.get(CmusStatus.TAGS.ALBUM);
+                _currentInfo.artist = cmusStatus.get(CmusStatus.TAGS.ARTIST);
                 Log.d(getClass().getSimpleName(), "Detected different album, getting artwork.");
                 // change art
                 Runnable artFetch = new Runnable() {
                     @Override
                     public void run() {
-                        final Bitmap artwork = ArtRetriever.getArt(ActivityRemote.this, _album, _artist);
+                        final Bitmap artwork = ArtRetriever.getArt(ActivityRemote.this, _currentInfo.album, _currentInfo.artist);
                         Log.d(getClass().getSimpleName(), "artwork is" + (artwork==null?"":" not") + " null.");
                         if (artwork != null) {
                             runOnUiThread(new Runnable() {

@@ -15,6 +15,10 @@ public class Storage {
     private static final String AVAILABLE_HOSTS = "AVAILABLE_HOSTS";
     private static final String READ_WELCOME = "READ_WELCOME";
 
+    public static Settings getSettings(Context context) {
+        return new Settings(context, getPrefs(context));
+    }
+
     public static SharedPreferences getPrefs(Context context) {
         return context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
     }

@@ -4,6 +4,8 @@
     <!-- From: file:/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <bool name="default_fetch_artwork">true</bool>
+
     <integer name="default_poll_mills">1000</integer>
     <integer name="default_port">3000</integer>
 
