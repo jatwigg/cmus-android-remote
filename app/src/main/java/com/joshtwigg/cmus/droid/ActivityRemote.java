@@ -1,11 +1,14 @@
 package com.joshtwigg.cmus.droid;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,12 +20,15 @@ import java.net.ConnectException;
  */
 public class ActivityRemote extends Activity implements ICallback {
     private Host _host = null;
+    private String _album = "", _artist = "";
     private boolean _bMuted = false;
     private boolean _bPlaying = false;
+    private boolean _bShowArt = true; //TODO: config this
     private ShowPopupMessage _showPopup = new ShowPopupMessage();
-    private TextView _status;
+    private TextView _trackDetails;
     private ImageButton _playButton;
     private SeekBar _seekBar;
+    private ImageView _albumArt;
     private int pollFreq;
     private static final Handler _pollHandler = new Handler();
     private int _lastRecordedVolume = -1;
@@ -39,8 +45,10 @@ public class ActivityRemote extends Activity implements ICallback {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_remote);
         pollFreq = getResources().getInteger(R.integer.default_poll_mills);
-        _status = (TextView) findViewById(R.id.status);
+        _trackDetails = (TextView) findViewById(R.id.track_details);
+        _trackDetails.setBackgroundColor(Color.argb(150, 0, 0, 0));
         _playButton = (ImageButton)findViewById(R.id.btnplay);
+        _albumArt = (ImageView)findViewById(R.id.album_art);
         _seekBar = (SeekBar)findViewById(R.id.seekBar);
         _seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -179,14 +187,43 @@ public class ActivityRemote extends Activity implements ICallback {
             _bMuted = false;
             _lastRecordedVolume = cmusStatus.getUnifiedVolumeInt();
         }
+        // check image art is still correct
+        if (_bShowArt) {
+            if (!_album.equals(cmusStatus.get(CmusStatus.TAGS.ALBUM)) ||
+                    !_artist.equals(cmusStatus.get(CmusStatus.TAGS.ARTIST))) {
+                _album = cmusStatus.get(CmusStatus.TAGS.ALBUM);
+                _artist = cmusStatus.get(CmusStatus.TAGS.ARTIST);
+                Log.d(getClass().getSimpleName(), "Detected different album, getting artwork.");
+                // change art
+                Runnable artFetch = new Runnable() {
+                    @Override
+                    public void run() {
+                        final Bitmap artwork = ArtRetriever.getArt(ActivityRemote.this, _album, _artist);
+                        Log.d(getClass().getSimpleName(), "artwork is" + (artwork==null?"":" not") + " null.");
+                        if (artwork != null) {
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    _albumArt.setImageBitmap(artwork);
+                                    _albumArt.postInvalidate(); //TODO: do i need this or will setBitmap call this?
+                                }
+                            });
+                        }
+                    };
+
+                };
+                _pollHandler.post(artFetch);
+            }
+        }
+        // check duration and position for seekbar
         final int position = cmusStatus.getPositionInt();
         final int duration = cmusStatus.getDurationInt();
 
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                _status.setText(cmusStatus.toString());
-                _status.postInvalidate();
+                _trackDetails.setText(cmusStatus.toString());
+                _trackDetails.postInvalidate();
                 if (duration != -1 && position != -1) {
                     _seekBar.setMax(duration);
                     _seekBar.setProgress(position);
@@ -213,7 +250,7 @@ public class ActivityRemote extends Activity implements ICallback {
 
     @Override
     public void onError(Exception e) {
-        if (e.getMessage().startsWith("Could not login")) {
+        if (e != null && e.getMessage() != null && e.getMessage().startsWith("Could not login")) {
             setTitle("CMUS Remote [Could not login, check password]");
         }
         else if (e instanceof ConnectException) {

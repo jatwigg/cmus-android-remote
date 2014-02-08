@@ -43,19 +43,11 @@
             <file
                 path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/values/strings.xml"
                 qualifiers="" >
-                <string name="default_password" ></string>
                 <string name="add_new" >Add Other
                 </string>
                 <string name="settings_label" >Remote Settings
                 </string>
-
-                <integer name="default_port" >
-3000
-                </integer>
-
                 <string name="app_name" >Cmus Remote
-                </string>
-                <string name="host_dialog_label" >Host Details
                 </string>
                 <string name="welcome_message" >Thank you for downloading this app.\nTo get started, start your cmus with the correct parameters\n
 <b>
@@ -74,16 +66,29 @@ on github
 www.icons4android.com
                     </a>.\n\nThis is a work in progress, please allow your device to report any problems.
                 </string>
-                <string name="hint_port" >Port
-                </string>
-                <string name="hint_password" >Password
-                </string>
-                <string name="hint_host" >Host Address
-                </string>
 
                 <integer name="default_poll_mills" >
 1000
                 </integer>
+
+                <string name="default_password" ></string>
+
+                <integer name="default_port" >
+3000
+                </integer>
+
+                <string name="host_dialog_label" >Host Details
+                </string>
+                <string name="track_details_text" >Nothing to display.
+                </string>
+                <string name="hint_port" >Port
+                </string>
+                <string name="hint_password" >Password
+                </string>
+                <string name="image_file_start" >img-
+                </string>
+                <string name="hint_host" >Host Address
+                </string>
             </file>
             <file
                 path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/values/styles.xml"

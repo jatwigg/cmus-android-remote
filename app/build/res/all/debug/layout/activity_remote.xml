@@ -4,21 +4,27 @@
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <LinearLayout
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0px"
         android:orientation="horizontal">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:src="@drawable/artwork_1"/>
-        <TextView
-            android:id="@+id/status"
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Nothing to display."
-            android:minLines="4"/>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/album_art"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/artwork_1"/>
+            <TextView
+                android:id="@+id/track_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/track_details_text"/>
+            </RelativeLayout>
+
+
 
         </LinearLayout>
 

@@ -14,7 +14,9 @@
     <string name="hint_password">Password</string>
     <string name="hint_port">Port</string>
     <string name="host_dialog_label">Host Details</string>
+    <string name="image_file_start">img-</string>
     <string name="settings_label">Remote Settings</string>
+    <string name="track_details_text">Nothing to display.</string>
     <string name="welcome_message">Thank you for downloading this app.\nTo get started, start your cmus with the correct parameters\n<b>  cmus with --listen 0.0.0.0</b>\nThen set a cmus password\n<b>  :passwd=yourpass</b>\nNow add your cmus host details to the settings in this app and hit the okay button.\n\nThis app was originally a fork of seriousben\'s <a href="https://github.com/seriousben/cmus-droid-remote">cmus-droid-remote</a> on github but has changed considerable.\nThe source for this app is hosted <a href="https://github.com/jatwigg/cmus-android-remote">on github</a>, feel free to check it out.\n\nThe awesome icons were kindly distributed by <a href="www.icons4android.com">www.icons4android.com</a>.\n\nThis is a work in progress, please allow your device to report any problems.</string>
     <!-- From: file:/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/values/styles.xml -->
     <eat-comment />

@@ -19,6 +19,7 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="com.josh" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
@@ -85,33 +86,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ActivityRemote.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ActivityRemote.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="11" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="3180">
-              <folding />
+            <state line="209" column="31" selection-start="7563" selection-end="7563" vertical-scroll-proportion="0.43781942" vertical-offset="2473" max-vertical-offset="3585">
+              <folding>
+                <element signature="e#1480#1535#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="activity_remote.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="8" selection-start="414" selection-end="414" vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="2445">
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="android-designer">
             <state />
           </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="23" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2535">
+              <folding />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtRetriever.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ArtRetriever.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ArtRetriever.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.07666099" vertical-offset="435" max-vertical-offset="1065">
+            <state line="54" column="83" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2025">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4721#4765#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,7 +154,7 @@
                 <option name="path" value="$PROJECT_DIR$/app" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":" />
+                <option name="name" value="cmus-android-remote" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
@@ -524,6 +528,119 @@
         </entry>
       </map>
     </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/22.5.1/da2d3f19534acf7ccea61e997957a8102753a5a5/dvlib-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/4.0/4a33d6206d6d442446a8edbd2b0798ecfaebc229/asm-analysis-4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/0.8.1/29759e9e995828e3681c1c9038dc6e5906c34b14/builder-0.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/36b6a585c0f0c63bd85fb04db0dcb7b217298956/guava-15.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.48/3824866f059053c43b118eb5a067ea1800d8c913/bcprov-jdk15on-1.48-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/22.5.1/5b001fc86e70eefd45dd84f73cb2c601a618b457/lint-checks-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/22.5.1/29a6d013884fb936ac44082fdd8b017aa0de56a/lint-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/22.5.1/20eb1d6909b9625a52f9bdfb60bc188a408937a8/common-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/0.8.1/a10cf710df4710002e35cf6634b478aebb40c3d3/builder-model-0.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/22.5.1/98501b00eb14e578e2ea8754bf43894a4c914b68/lint-api-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.4/5310da9f90e843883309e9e0bf5950faa79882a0/commons-codec-1.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/0.8.1/aa919f0b677742022c63c25f394811238b7786d/gradle-0.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/309cd2cff7260e465792fda3dcbb063b730d8050/kxml2-2.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.lombok/lombok-ast/0.2.2/47ebe619db7def288aad08bd65d26eea6d67f8ee/lombok-ast-0.2.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/22.5.1/b622b9a3d508934b38e144eaf4975088da079c53/ddmlib-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/4.0/4a33d6206d6d442446a8edbd2b0798ecfaebc229/asm-4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/4.10/9ed4b7b34d522f36aa61b5142576fa5e8cc733b8/proguard-gradle-4.10-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.0/913e9963c558d36bdfdc19bab739a282999d08eb/commons-compress-1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-base/4.10/2e69a382547b042b3d2d03440687fb1e2ac06af2/proguard-base-4.10-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/22.5.1/268b259bf4ea47ddfcd344d55673031b79b39996/sdklib-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.2.1/9476a897088c64437ddba17bedbbdb2272499d63/javawriter-2.2.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/22.5.1/e94c018e78083ef6b00ed1b12358907b9c333a3c/manifest-merger-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/4.0/4a33d6206d6d442446a8edbd2b0798ecfaebc229/asm-tree-4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.48/8cff777fce5ef53cc35fa569faa8d12faaf34a78/bcpkix-jdk15on-1.48-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.1.1/42f6189003f355107f53b937770092517de69710/httpclient-4.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.1/1fdf61e5ba87e0e4676c22677e0b2fe3a05c2fd8/httpcore-4.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/22.5.1/a00d7bd1361916d7e54b050d607b1b5256816f01/layoutlib-api-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/0.8.1/7b91d276a1628dfcef89b9cf2ca6b234709f7b9e/builder-test-api-0.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/22.5.1/9e74b20d643ebc33ad78ddc22c46412ca11a5ea7/sdk-common-22.5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.2.2/fb9dc21349d06dd00b395af5c42f299df828f9da/ecj-4.2.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.1/3ac83213baeab2b21fde6c0bf47ed68ea3e6a8da/httpmime-4.1-sources.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/app">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/app" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="app" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-core-impl-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-tooling-api-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-scala-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-jetty-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-language-base-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-code-quality-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-plugins-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-cpp-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-maven-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-messaging-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-diagnostics-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-build-comparison-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-ide-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/ant-antlr-1.9.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-announce-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-launcher-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-cli-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/ant-launcher-1.9.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-sonar-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-ui-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-build-init-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-open-api-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-publish-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-osgi-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-native-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-docs-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-core-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-language-jvm-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-jacoco-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-reporting-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-javascript-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-antlr-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/ant-1.9.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-signing-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-base-services-groovy-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-base-services-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-ear-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-resources-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/gradle-wrapper-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/groovy-all-1.8.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-bin/6oa4rff9viiqskhgd6uns5v1f8/gradle-1.10/lib/plugins/gradle-ivy-1.10.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -545,7 +662,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityWelcome.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusCommand.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-v14/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivitySettings.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_host_dialog.xml" />
@@ -554,16 +670,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ShowPopupMessage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/BufferedImage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ArtRetriever.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
-    <option name="y" value="-1084" />
+    <option name="y" value="-4" />
     <option name="width" value="1857" />
     <option name="height" value="1085" />
   </component>
@@ -593,6 +710,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -696,6 +814,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmus-droid-remote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmus-android-remote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmus-droid-remote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmus-android-remote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -706,7 +884,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -721,7 +898,7 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="mandroid:5555" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="ART" />
+    <property name="SearchEverywhereHistory" value="&#10;ART" />
     <property name="LayoutCode.rearrangeEntries" value="false" />
     <property name="ExportedModule" value="app" />
     <property name="ExportedApkPath" value="$PROJECT_DIR$/app/app.apk" />
@@ -946,7 +1123,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-1084" width="1857" height="1085" extended-state="6" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -959,7 +1136,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36174637" sideWeight="0.2070081" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991913" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.49973047" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -971,6 +1147,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991913" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.49973047" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -991,6 +1168,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ArtRetriever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="30" selection-start="1851" selection-end="1851" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1695">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4721#4765#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="7" selection-start="533" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="660" />
@@ -1016,7 +1203,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="61" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
-          <folding />
+          <folding>
+            <element signature="e#1480#1535#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,13 +1224,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="4" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2175">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java">
@@ -1052,7 +1241,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="61" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
-          <folding />
+          <folding>
+            <element signature="e#1480#1535#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,13 +1262,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="33" selection-start="2745" selection-end="2745" vertical-scroll-proportion="0.0" vertical-offset="1078" max-vertical-offset="2040">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java">
@@ -1088,7 +1279,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="61" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
-          <folding />
+          <folding>
+            <element signature="e#1480#1535#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1107,13 +1300,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="33" selection-start="2745" selection-end="2745" vertical-scroll-proportion="0.0" vertical-offset="1078" max-vertical-offset="2040">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java">
@@ -1124,7 +1317,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="5" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="2415">
-          <folding />
+          <folding>
+            <element signature="e#1480#1535#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1141,7 +1336,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="0" selection-start="4691" selection-end="4691" vertical-scroll-proportion="0.0" vertical-offset="1263" max-vertical-offset="2415">
-          <folding />
+          <folding>
+            <element signature="e#1480#1535#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1195,13 +1392,6 @@
         <state line="8" column="79" selection-start="323" selection-end="323" vertical-scroll-proportion="0.2044293" vertical-offset="0" max-vertical-offset="720" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="188" selection-end="188" vertical-scroll-proportion="0.10452962" vertical-offset="0" max-vertical-offset="574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivitySettings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="51" selection-start="771" selection-end="771" vertical-scroll-proportion="0.39198607" vertical-offset="0" max-vertical-offset="915" />
@@ -1225,33 +1415,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_host_dialog.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="48" selection-start="385" selection-end="385" vertical-scroll-proportion="-4.3076925" vertical-offset="23" max-vertical-offset="1035">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="15" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.5721925" vertical-offset="204" max-vertical-offset="765">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
@@ -1290,28 +1480,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="11" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="3180">
+        <state line="5" column="38" selection-start="256" selection-end="256" vertical-scroll-proportion="0.13066202" vertical-offset="0" max-vertical-offset="574">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="414" selection-end="414" vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="2445">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2535">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ArtRetriever.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.07666099" vertical-offset="435" max-vertical-offset="1065">
+        <state line="54" column="83" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2025">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4721#4765#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="31" selection-start="7563" selection-end="7563" vertical-scroll-proportion="0.43781942" vertical-offset="2473" max-vertical-offset="3585">
+          <folding>
+            <element signature="e#1480#1535#0" expanded="true" />
           </folding>
         </state>
       </provider>
