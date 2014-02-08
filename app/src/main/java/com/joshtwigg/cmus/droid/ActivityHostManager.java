@@ -114,16 +114,21 @@ public class ActivityHostManager extends Activity implements IReceiveHost {
     }
 
     public void trimCache() {
-        try {
-            File dir = getCacheDir();
-            if (dir != null && dir.isDirectory()) {
-                for (File file : dir.listFiles()) {
-                    deleteDir(file);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    File dir = getCacheDir();
+                    if (dir != null && dir.isDirectory()) {
+                        for (File file : dir.listFiles()) {
+                            deleteDir(file);
+                        }
+                    }
+                } catch (Exception e) {
+                    Log.e(getClass().getSimpleName(), "Error clearing cache.", e);
                 }
             }
-        } catch (Exception e) {
-            Log.e(getClass().getSimpleName(), "Error clearing cache.", e);
-        }
+        }).start();
     }
 
     public static boolean deleteDir(File dir) {

@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -52,7 +53,12 @@ public class ActivityRemote extends Activity implements ICallback {
         IntentFilter intentFilter = new IntentFilter(getResources().getString(R.string.intent_settings_changed));
         registerReceiver(_intentReceiver, intentFilter);
         _settings = Storage.getSettings(this);
-        setContentView(R.layout.activity_remote);
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            setContentView(R.layout.activity_remote_horizontal);
+        }
+        else {
+            setContentView(R.layout.activity_remote);
+        }
         _trackDetails = (TextView) findViewById(R.id.track_details);
         _trackDetails.setBackgroundColor(Color.argb(150, 0, 0, 0));
         _playButton = (ImageButton)findViewById(R.id.btnplay);

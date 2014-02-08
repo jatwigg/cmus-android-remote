@@ -20,6 +20,9 @@
                 android:id="@+id/track_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/track_details_text"/>
             </RelativeLayout>

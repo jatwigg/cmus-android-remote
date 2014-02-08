@@ -136,10 +136,9 @@ public class CmusStatus {
     @Override
     public String toString() {
         StringBuilder strBuilder = new StringBuilder();
-        strBuilder.append("Title: ").append(_map.get(TAGS.TITLE)).append("\n");
-        strBuilder.append("Album: ").append(_map.get(TAGS.ALBUM)).append("\n");
-        strBuilder.append("Artist: ").append(_map.get(TAGS.ARTIST)).append("\n");
-        strBuilder.append("Volume: ").append(getUnifiedVolume()).append("\n");
+        strBuilder.append("\n").append(_map.get(TAGS.TITLE)).append("\n");
+        strBuilder.append(_map.get(TAGS.ALBUM)).append("\n");
+        strBuilder.append(_map.get(TAGS.ARTIST)).append("\n");
         return strBuilder.toString();
     }
 }

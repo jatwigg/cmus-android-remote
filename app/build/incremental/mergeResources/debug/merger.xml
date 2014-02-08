@@ -24,6 +24,11 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="activity_remote_horizontal"
+                path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/layout/activity_remote_horizontal.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="activity_remote"
                 path="/home/josh/AndroidStudioProjects/cmus-android-remote/app/src/main/res/layout/activity_remote.xml"
                 qualifiers=""

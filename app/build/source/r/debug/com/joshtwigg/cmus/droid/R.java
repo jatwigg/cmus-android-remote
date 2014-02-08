@@ -89,7 +89,8 @@ public final class R {
         public static final int activity_host_dialog=0x7f030000;
         public static final int activity_host_manager=0x7f030001;
         public static final int activity_remote=0x7f030002;
-        public static final int activity_welcome=0x7f030003;
+        public static final int activity_remote_horizontal=0x7f030003;
+        public static final int activity_welcome=0x7f030004;
     }
     public static final class string {
         public static final int add_new=0x7f060000;

@@ -16,6 +16,13 @@
           <theme>@android:style/Theme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote_horizontal.xml">
+        <config>
+          <device>Nexus 4</device>
+          <state>Landscape</state>
+          <theme>@android:style/Theme</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AndroidLogFilters">
@@ -89,13 +96,13 @@
       <file leaf-file-name="ActivityRemote.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="13" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="3870">
+            <state line="55" column="57" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="3945">
               <folding>
-                <element signature="e#1096#1294#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-                <element signature="e#1344#1533#0" expanded="true" />
-                <element signature="e#1526#1527#0" expanded="true" />
-                <element signature="e#1704#1762#0" expanded="true" />
+                <element signature="e#1138#1336#0" expanded="true" />
+                <element signature="e#1329#1330#0" expanded="true" />
+                <element signature="e#1386#1575#0" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1746#1804#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,19 +111,51 @@
       <file leaf-file-name="ActivityHostManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityHostManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="39" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.5349501" vertical-offset="135" max-vertical-offset="1965">
+            <state line="130" column="19" selection-start="5293" selection-end="5293" vertical-scroll-proportion="0.978602" vertical-offset="799" max-vertical-offset="1905">
               <folding>
-                <element signature="e#1364#1552#0" expanded="true" />
-                <element signature="e#1541#1542#0" expanded="true" />
-                <element signature="e#1653#1971#0" expanded="true" />
+                <element signature="e#1779#1945#0" expanded="true" />
                 <element signature="e#1926#1927#0" expanded="true" />
-                <element signature="e#1960#1961#0" expanded="true" />
-                <element signature="e#2086#2324#0" expanded="true" />
-                <element signature="e#2313#2314#0" expanded="true" />
                 <element signature="e#2602#2644#0" expanded="true" />
                 <element signature="e#2958#3000#0" expanded="true" />
                 <element signature="e#4024#4082#0" expanded="true" />
                 <element signature="e#4113#4169#0" expanded="true" />
+                <element signature="e#4767#5283#0" expanded="true" />
+                <element signature="e#5272#5273#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CmusStatus.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="138" column="30" selection-start="4786" selection-end="4786" vertical-scroll-proportion="0.0" vertical-offset="1504" max-vertical-offset="2205">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_remote.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="16" selection-start="1026" selection-end="1056" vertical-scroll-proportion="-8.653846" vertical-offset="135" max-vertical-offset="2580">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_remote_horizontal.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote_horizontal.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="25" selection-start="1109" selection-end="1109" vertical-scroll-proportion="-14.423077" vertical-offset="0" max-vertical-offset="2790">
+              <folding>
+                <element signature="e#1541#1569#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -670,9 +709,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ShowPopupMessage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/BufferedImage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ArtRetriever.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/Storage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/TrackInfos.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/TrackInfo.java" />
@@ -681,6 +718,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_remote_horizontal.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityHostManager.java" />
       </list>
     </option>
@@ -918,6 +958,7 @@
       <recent name="net.sourceforge.cmus.droid" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -1143,10 +1184,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24324325" sideWeight="0.2070081" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991913" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.49973047" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24324325" sideWeight="0.79299194" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24324325" sideWeight="0.79299194" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1638814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1155,7 +1197,6 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991913" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1175,20 +1216,15 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="57" selection-start="5326" selection-end="5326" vertical-scroll-proportion="0.0" vertical-offset="2520" max-vertical-offset="3600" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="61" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
           <folding>
-            <element signature="e#1096#1294#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1344#1533#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1704#1762#0" expanded="true" />
+            <element signature="e#1138#1336#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1386#1575#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1746#1804#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1226,11 +1262,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="61" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
           <folding>
-            <element signature="e#1096#1294#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1344#1533#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1704#1762#0" expanded="true" />
+            <element signature="e#1138#1336#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1386#1575#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1746#1804#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1268,11 +1304,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="61" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
           <folding>
-            <element signature="e#1096#1294#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1344#1533#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1704#1762#0" expanded="true" />
+            <element signature="e#1138#1336#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1386#1575#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1746#1804#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1310,11 +1346,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="5" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="2415">
           <folding>
-            <element signature="e#1096#1294#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1344#1533#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1704#1762#0" expanded="true" />
+            <element signature="e#1138#1336#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1386#1575#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1746#1804#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1333,11 +1369,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="0" selection-start="4691" selection-end="4691" vertical-scroll-proportion="0.0" vertical-offset="1263" max-vertical-offset="2415">
           <folding>
-            <element signature="e#1096#1294#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1344#1533#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1704#1762#0" expanded="true" />
+            <element signature="e#1138#1336#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1386#1575#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1746#1804#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1448,30 +1484,11 @@
         <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.023850085" vertical-offset="1" max-vertical-offset="765" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2535">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ArtRetriever.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="83" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1950">
           <folding>
             <element signature="e#4543#4587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="21" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.0" vertical-offset="1167" max-vertical-offset="2220">
-          <folding>
-            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1535,34 +1552,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/CmusStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="30" selection-start="4786" selection-end="4786" vertical-scroll-proportion="0.0" vertical-offset="1504" max-vertical-offset="2205">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="16" selection-start="1026" selection-end="1056" vertical-scroll-proportion="-8.653846" vertical-offset="135" max-vertical-offset="2580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remote_horizontal.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="25" selection-start="1109" selection-end="1109" vertical-scroll-proportion="-14.423077" vertical-offset="0" max-vertical-offset="2790">
+          <folding>
+            <element signature="e#1541#1569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityRemote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="13" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="3870">
+        <state line="55" column="57" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="3945">
           <folding>
-            <element signature="e#1096#1294#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1344#1533#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1704#1762#0" expanded="true" />
+            <element signature="e#1138#1336#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1386#1575#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1746#1804#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joshtwigg/cmus/droid/ActivityHostManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="39" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.5349501" vertical-offset="135" max-vertical-offset="1965">
+        <state line="130" column="19" selection-start="5293" selection-end="5293" vertical-scroll-proportion="0.978602" vertical-offset="799" max-vertical-offset="1905">
           <folding>
-            <element signature="e#1364#1552#0" expanded="true" />
-            <element signature="e#1541#1542#0" expanded="true" />
-            <element signature="e#1653#1971#0" expanded="true" />
+            <element signature="e#1779#1945#0" expanded="true" />
             <element signature="e#1926#1927#0" expanded="true" />
-            <element signature="e#1960#1961#0" expanded="true" />
-            <element signature="e#2086#2324#0" expanded="true" />
-            <element signature="e#2313#2314#0" expanded="true" />
             <element signature="e#2602#2644#0" expanded="true" />
             <element signature="e#2958#3000#0" expanded="true" />
             <element signature="e#4024#4082#0" expanded="true" />
             <element signature="e#4113#4169#0" expanded="true" />
+            <element signature="e#4767#5283#0" expanded="true" />
+            <element signature="e#5272#5273#0" expanded="true" />
           </folding>
         </state>
       </provider>
