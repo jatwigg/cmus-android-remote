@@ -76,6 +76,9 @@ www.icons4android.com
 true
                 </bool>
 
+                <integer name="default_volume_timeout" >
+5000
+                </integer>
                 <integer name="default_poll_mills" >
 1000
                 </integer>

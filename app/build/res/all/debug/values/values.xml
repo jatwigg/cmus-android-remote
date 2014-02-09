@@ -8,6 +8,7 @@
 
     <integer name="default_poll_mills">1000</integer>
     <integer name="default_port">3000</integer>
+    <integer name="default_volume_timeout">5000</integer>
 
     <string name="add_new">Add Other</string>
     <string name="app_name">Cmus Remote</string>

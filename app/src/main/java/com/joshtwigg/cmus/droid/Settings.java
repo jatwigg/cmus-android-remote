@@ -11,16 +11,20 @@ import java.io.Serializable;
 public class Settings implements Serializable{
     private static final String KEY_POLL_MILLS = "KEY_POLL_MILLS";
     private static final String KEY_FETCHARTWORK = "KEY_FETCHARTWORK";
+    private static final String KEY_VOLUME_TIMEOUT = "KEY_VOLUME_TIMEOUT";
 
     public int POLL_DURATION_MILLS;
     public boolean FETCH_ARTWORK;
+    public long VOLUME_DIALOG_TIMEOUT;
 
     private int original_POLL_DURATION_MILLS;
     private boolean original_FETCH_ARTWORK;
+    private long original_VOLUME_DIALOG_TIMEOUT;
 
     public Settings(final Context context, final SharedPreferences prefs) {
         original_POLL_DURATION_MILLS = POLL_DURATION_MILLS = prefs.getInt(KEY_POLL_MILLS, context.getResources().getInteger(R.integer.default_poll_mills));
         original_FETCH_ARTWORK = FETCH_ARTWORK = prefs.getBoolean(KEY_FETCHARTWORK, context.getResources().getBoolean(R.bool.default_fetch_artwork));
+        original_VOLUME_DIALOG_TIMEOUT = VOLUME_DIALOG_TIMEOUT = prefs.getLong(KEY_VOLUME_TIMEOUT, context.getResources().getInteger(R.integer.default_volume_timeout));
     }
 
     public boolean saveChanges(final Context context) {
@@ -32,7 +36,8 @@ public class Settings implements Serializable{
     }
 
     public boolean hasChanged() {
-        return original_FETCH_ARTWORK != FETCH_ARTWORK ||
-                original_POLL_DURATION_MILLS != original_POLL_DURATION_MILLS;
+        return original_FETCH_ARTWORK != FETCH_ARTWORK
+                || original_POLL_DURATION_MILLS != POLL_DURATION_MILLS
+                || original_VOLUME_DIALOG_TIMEOUT != VOLUME_DIALOG_TIMEOUT;
     }
 }

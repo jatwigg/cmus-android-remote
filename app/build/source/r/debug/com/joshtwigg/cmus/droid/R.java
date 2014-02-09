@@ -84,6 +84,7 @@ public final class R {
     public static final class integer {
         public static final int default_poll_mills=0x7f050000;
         public static final int default_port=0x7f050001;
+        public static final int default_volume_timeout=0x7f050002;
     }
     public static final class layout {
         public static final int activity_host_dialog=0x7f030000;

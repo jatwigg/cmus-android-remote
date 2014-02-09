@@ -26,7 +26,7 @@ Features
 * Implemented functions include: mute/unmute, volume up/down, shuffle, repeat track/all/none, seek track, previous, forward, stop, play and pause.
 * Current track information is displayed.
 * Theme changes depending on Android OS version.
-* Supports landscape and portrait mode.
+* Landscape and portrait mode.
 * Automatically fetches album artwork from google (can be disabled).
 
 More functionality to come.
