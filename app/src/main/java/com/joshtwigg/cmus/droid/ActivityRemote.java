@@ -180,6 +180,8 @@ public class ActivityRemote extends Activity implements ICallback {
         }
 
         final CmusStatus cmusStatus = new CmusStatus(answer);
+        // don't update display if stopped.
+        if ("stopped".equals(cmusStatus.get(CmusStatus.STATUS))) return;
         // set host and track.
         setTitle(String.format("%s:%d",_host.host, _host.port));
         if (cmusStatus.get(CmusStatus.STATUS).equals("stopped") || cmusStatus.get(CmusStatus.STATUS).equals("paused")){
