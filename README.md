@@ -1,5 +1,6 @@
 cmus-android-remote
-=================
+===================
+![alt image](ss1.png)
 
 This is an Android application to remotely control your cmus music player.
 This project was originally a fork of [seriousben's cmus-droid-remote](https://github.com/seriousben/cmus-droid-remote).
