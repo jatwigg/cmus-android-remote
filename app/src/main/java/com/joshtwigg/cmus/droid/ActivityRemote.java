@@ -80,6 +80,7 @@ public class ActivityRemote extends Activity implements ICallback {
 
             }
         });
+        ActivityWelcome.showIfFirstTime(this);
     }
 
     @Override
@@ -101,7 +102,7 @@ public class ActivityRemote extends Activity implements ICallback {
         }
         if (_settings.FETCH_ARTWORK) {
             _albumArt.setVisibility(View.VISIBLE);
-            _currentInfo.album = ""; //regetch if needed
+            _currentInfo.album = ""; //get if needed
         } else {
             _albumArt.setVisibility(View.INVISIBLE);
         }

@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +15,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -32,28 +34,7 @@ public class ActivityHostManager extends Activity implements IReceiveHost {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_host_manager);
         _settings = Storage.getSettings(ActivityHostManager.this);
-        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Are you sure?");
-        builder.setMessage("If you clear your cache it will delete all artwork stored on this device.");
-        builder.setNegativeButton("Cancel", null);
-        builder.setPositiveButton("Proceed", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                trimCache();
-            }
-        });
-        Button button = (Button)findViewById(R.id.clear_cache);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        builder.show();
-                    }
-                });
-            }
-        });
+        setupClearCacheAlert();
         CheckBox checkBox = (CheckBox)findViewById(R.id.fetch_art);
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -79,6 +60,42 @@ public class ActivityHostManager extends Activity implements IReceiveHost {
         for (String s : hosts) _hostAdapter.add(s);
         _hostAdapter.notifyDataSetChanged();
         Util.runSearchHosts(this, this);
+        setupVersionInfo();
+    }
+
+    private void setupClearCacheAlert() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Are you sure?");
+        builder.setMessage("If you clear your cache it will delete all artwork stored on this device.");
+        builder.setNegativeButton("Cancel", null);
+        builder.setPositiveButton("Proceed", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                trimCache();
+            }
+        });
+        Button button = (Button)findViewById(R.id.clear_cache);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        builder.show();
+                    }
+                });
+            }
+        });
+    }
+
+    private void setupVersionInfo() {
+        try {
+        PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+        TextView version = (TextView)findViewById(R.id.version);
+        version.setText(pInfo.versionName);
+        } catch (Exception e) {
+            Log.e(getClass().getSimpleName(), "Error setting version number", e);
+        }
     }
 
     @Override
