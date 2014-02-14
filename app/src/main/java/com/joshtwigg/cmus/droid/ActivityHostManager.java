@@ -51,7 +51,7 @@ public class ActivityHostManager extends Activity implements IReceiveHost {
             @Override
             public void onItemClick(AdapterView<?> adapter, View item, int position, long id) {
                 String address = adapter.getItemAtPosition(position).toString();
-                if (address == getResources().getString(R.string.add_new)) address = "";
+                if (address != null && address.equals(getResources().getString(R.string.add_new))) address = "";
                 ActivityHostManager.this.startActivityForResult(ActivityHostDialog.getStartIntent(ActivityHostManager.this, address), REQUEST_CODE);
             }
         });
@@ -92,7 +92,7 @@ public class ActivityHostManager extends Activity implements IReceiveHost {
         try {
         PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
         TextView version = (TextView)findViewById(R.id.version);
-        version.setText(pInfo.versionName);
+        version.setText("Version " + pInfo.versionName);
         } catch (Exception e) {
             Log.e(getClass().getSimpleName(), "Error setting version number", e);
         }
