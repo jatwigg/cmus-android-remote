@@ -57,7 +57,7 @@
   cmus with --listen 0.0.0.0
                     </b>\nThen set a cmus password\n
 <b>
-  :passwd=yourpass
+  :set passwd=yourpass
                     </b>\nNow add your cmus host details to the settings in this app and hit the okay button.\n\nThis app was originally a fork of seriousben\'s 
 <a href="https://github.com/seriousben/cmus-droid-remote" >
 cmus-droid-remote

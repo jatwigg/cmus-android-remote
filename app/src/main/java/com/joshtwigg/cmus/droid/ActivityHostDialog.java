@@ -1,6 +1,7 @@
 package com.joshtwigg.cmus.droid;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,6 +33,7 @@ public class ActivityHostDialog extends Activity {
         if (_hostAddress == null || _hostAddress.equals("")) {
             // type new address
             Log.d(getClass().getSimpleName(), "host is empty.");
+            _port.setText(getResources().getText(R.integer.default_port).toString());
         }
         else {
             // load saved or default values
@@ -47,7 +49,29 @@ public class ActivityHostDialog extends Activity {
     public void onClickOkay(View view) {
         String newHost = _host.getText().toString();
         String password = _password.getText().toString();
-        int port = Integer.parseInt(_port.getText().toString());
+        int port;
+
+        if (newHost.length() < 1) {
+            AlertDialog.Builder b = new AlertDialog.Builder(this);
+            b.setTitle("Problem");
+            b.setMessage("You must specify a host. Try the IP address of your machine.");
+            b.setPositiveButton("Okay", null);
+            b.show();
+            return;
+        }
+
+        try {
+            port = Integer.parseInt(_port.getText().toString());
+        }
+        catch (Exception e) {
+            AlertDialog.Builder b = new AlertDialog.Builder(this);
+            b.setTitle("Problem");
+            b.setMessage( String.format("You must specify a port, the default is %s.",
+                    getResources().getText(R.integer.default_port)) );
+            b.setPositiveButton("Okay", null);
+            b.show();
+            return;
+        }
 
         Storage.save(this, _hostAddress, newHost, port, password);
         setResult(RESULT_OK);
